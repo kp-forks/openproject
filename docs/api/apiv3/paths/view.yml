@@ -3,7 +3,7 @@
 get:
   parameters:
     - description: View id
-      example: '1'
+      example: 42
       in: path
       name: id
       required: true
@@ -18,9 +18,12 @@ get:
               "$ref": "../components/examples/view_work_packages_table.yml"
             ViewTeamPlanner:
               "$ref": "../components/examples/view_team_planner.yml"
+      description: Returns the result of a single view, dependent of the view type.
     '400':
       content:
         application/hal+json:
+          schema:
+            $ref: "../components/schemas/error_response.yml"
           examples:
             response:
               value:
@@ -33,6 +36,8 @@ get:
     '403':
       content:
         application/hal+json:
+          schema:
+            $ref: "../components/schemas/error_response.yml"
           examples:
             response:
               value:
@@ -47,6 +52,8 @@ get:
     '404':
       content:
         application/hal+json:
+          schema:
+            $ref: "../components/schemas/error_response.yml"
           examples:
             response:
               value:
