@@ -505,7 +505,7 @@ components:
       "$ref": "./components/schemas/document_model.yml"
     DocumentsModel:
       "$ref": "./components/schemas/documents_model.yml"
-    Error422:
+    ErrorResponse:
       "$ref": "./components/schemas/error_response.yml"
     Example_FormModel:
       "$ref": "./components/schemas/example_form_model.yml"
