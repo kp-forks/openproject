@@ -6,6 +6,10 @@ vi:
   permission_show_board_views: "Xem bảng"
   permission_manage_board_views: "Quản lý bảng"
   project_module_board_view: "Bảng"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Bảng"
     label_boards: "Các bảng"
@@ -34,6 +38,3 @@ vi:
         Bảng với các cột tự động cho các dự án con. Kéo các gói công việc vào các danh sách khác sẽ cập nhật dự án (con) tương ứng.
       subtasks: >
         Bảng với các cột tự động cho các phần tử phụ. Kéo các gói công việc vào các danh sách khác sẽ cập nhật phần tử cha tương ứng.
-    upsale:
-      teaser_text: 'Bạn có muốn tự động hóa quy trình làm việc của mình với các bảng không? Các bảng nâng cao là một tiện ích bổ sung Enterprise. Vui lòng nâng cấp lên gói trả phí.'
-      upgrade: 'Nâng cấp ngay'

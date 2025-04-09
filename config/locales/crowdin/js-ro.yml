@@ -630,9 +630,6 @@ ro:
         property_is: "este în %{difference_in_days}"
         property_was: "a fost acum %{difference_in_days}"
         property_is_deleted: "este ștearsă."
-        upsale:
-          title: "Alerte date"
-          description: "Cu alertele de date, veți fi notificat cu privire la următoarele date de început sau de sfârșit, astfel încât să nu ratați sau să uitați niciodată un termen limită important."
       center:
         label_actor_and: "și"
         and_more_users:
@@ -696,7 +693,6 @@ ro:
           date_alerts:
             title: "Alerte dăți"
             description: "Notificări automate atunci când se apropie dăți importante pentru pachetele de lucru deschise în care ești implicat (desemnat, responsabil sau observator)."
-            teaser_text: "Cu alertele de date, veți fi notificat cu privire la următoarele date de început sau de sfârșit, astfel încât să nu ratați sau să uitați niciodată un termen limită important."
           overdue: În caz de întârziere
         project_specific:
           title: "Setări notificare specifice proiectului"
@@ -1047,8 +1043,6 @@ ro:
       sharing:
         title: "Share work package"
         show_all_users: "Arată toți utilizatorilor cu care pachetul de lucru a fost partajat"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Configurarea tabelului pachetului de lucru"
         summary: "Tabel cu pachete de lucru pe rânduri şi câmpurile pachetelor pe coloane."
@@ -1083,10 +1077,6 @@ ro:
           manually: "Manual"
           warning: "La activarea modului de sortare automată, veți pierde sortarea anterioară."
         columns_help_text: "Utilizează datele de mai sus pentru a adăuga sau elimina coloane în vizualizarea tabelului. Poți glisa și plasa coloanele pentru a le reordona."
-        upsale:
-          attribute_highlighting: "Aveți nevoie ca anumite pachete de lucru să iasă în evidență?"
-          relation_columns: "Aveți nevoie să vedeți relațiile din lista pachetelor de lucru?"
-          check_out_link: "Consultați ediția Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtrează pachetele de lucru după tipul relației"
       tabs:
@@ -1303,9 +1293,7 @@ ro:
       clear: "Șterge"
       apply: "Aplică"
       header_description: "Evidențiază modificările făcute la această listă de la orice punct din trecut."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Arată modificările"
-      baseline_comparison: "Comparație referință"
       help_description: "Zona orară de referință"
       time_description: "În timpul tău local: %{datetime}"
       time: "Timp"

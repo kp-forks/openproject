@@ -63,9 +63,6 @@ uk:
         main-menu-bg-selected-background: "Головне меню в разі вибору"
         main-menu-bg-hover-background: "Головне меню в разі наведення"
       custom_colors: "Кольори за власними вподобаннями"
-      customize: "Персоналізуйте свій екземпляр OpenProject за допомогою власного логотипа й кольорів."
-      enterprise_notice: "Це крихітне доповнення доступне тільки для підписників версії Enterprise як особлива подяка за їхню фінансову підтримку розвитку OpenProject."
-      enterprise_more_info: "Примітка: використаний логотип буде загальнодоступний."
       manage_colors: "Редагувати параметри вибору кольору"
       instructions:
         primary-button-color: "Насичений акцентний колір використовується для більшості важливих кнопок на екрані."
@@ -211,9 +208,6 @@ uk:
     new: "Нова спеціальна дія"
     edit: "Редагувати спеціальну дію %{name}"
     execute: "Виконати %{name}"
-    upsale:
-      title: "Власні дії"
-      description: "Користувацькі дії – це ярлики набору попередньо визначених дій, які ви можете включати в певні пакети робіт залежно від статусу, ролі, типу або проєкту."
   custom_fields:
     admin:
       custom_field_projects:
@@ -243,8 +237,6 @@ uk:
           zero: немає піделементів
           one: 1 піделемент
           other: "Піделементів: %{count}"
-    upsale:
-      custom_field_format_hierarchy: "Потрібно створити ієрархію в користувацьких полях для пакетів робіт?"
     text_add_new_custom_field: >
       Щоб додати нові користувальницькі поля до проекту, спочатку потрібно створити їх, перш ніж ви зможете додати їх до цього проекту.
     is_enabled_globally: "Увімкнено у всьому світі"
@@ -554,10 +546,6 @@ uk:
         Усі екземпляри прототипу користувача (наприклад, виконавець, відповідальний тощо) буде перепризначено обліковому запису з назвою «Видалений користувач». Оскільки дані кожного видаленого облікового запису перепризначаються цьому обліковому запису, відрізнити дані, створені користувачем, від даних іншого видаленого облікового запису, може бути важко.
       irreversible: "Цю дію не можна скасувати"
       confirmation: "Введіть ім’я прототипу  користувача %{name}, щоб підтвердити видалення."
-    upsale:
-      title: Прототипи користувачів
-      description: >
-        Прототипи користувачів допомагають призначати пакети робіт користувачам, які не входять у ваш проєкт. Вони можуть бути корисні в різних сценаріях. Наприклад, якщо потрібно відстежувати завдання для ресурсу, який поки не доступний або не названий. Або ж ви хочете відстежувати завдання, призначені особі, не надаючи їй доступу до OpenProject.
   prioritiies:
     edit:
       priority_color_text: |
@@ -614,8 +602,6 @@ uk:
     edit:
       form_configuration:
         tab: "Конфігурація форми"
-      more_info_text_html: >
-        У версії Enterprise можна персоналізувати конфігурацію форми за допомогою таких додаткових доповнень: <br> <ul class="%{list_styling_class}">Додавання нових груп атрибутів</b></li> <li><b>Перейменування груп атрибутів</b></li> <li><b>Додавання таблиці пов’язаних пакетів робіт</b></li> </ul>
       projects:
         tab: "Проєкти"
         enabled_projects: "Включені проєкти"
@@ -1061,6 +1047,7 @@ uk:
         consented_at: "Згоден на"
       user_preference:
         comments_sorting: "Відображення коментарів"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Режим спеціальних можливостей"
         auto_hide_popups: "Автоматичне приховування сповіщень про успіх"
         warn_on_leaving_unsaved: "Попереджати мене, коли залишив робочий пакет із незбереженими змінами"
@@ -2040,17 +2027,78 @@ uk:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: зліва направо
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Доповнення версії Enterprise"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Додаткові відомості"
-      automatic_subject_generation:
-        description: "Створюйте автоматично згенеровані теми на основі атрибутів і тексту."
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
+        description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Налаштуйте конфігурацію форми за допомогою цих додаткових доповнень:"
-        add_groups: "Додати нові групи атрибутів"
-        rename_groups: "Перейменувати групи атрибутів"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Дії щодо відстеження часу"
   enumeration_work_package_priorities: "Пріоритети робочого пакету"
   enumeration_reported_project_statuses: "Повідомлення про статус проекту"
@@ -3316,6 +3364,7 @@ uk:
   notice_successful_delete: "Видалення успішно завершене."
   notice_successful_cancel: "Успішно видалено."
   notice_successful_update: "Успішно оновлено."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Оновлення завершено. Користувацькі поля активованих типів автоматично активовано у формі пакета робіт. <a href="%{url}" target="_blank">Докладніше</a>.
   notice_to_many_principals_to_display: "Є занадто багато результатів.\nЗвузити пошук ввівши назву нового елемента (або групи)."
@@ -3811,8 +3860,6 @@ uk:
         Решту файлів перевірено. Файлів на карантині: %{file_count}. Зараз ви перейдете на сторінку карантину, де можна видалити або замінити файли, перенесені в карантин.
       remaining_rescanned_files: >
         Перевірку на віруси ввімкнено. Потрібно ще перевірити деякі вивантажені раніше файли (%{file_count}). Цей процес заплановано у фоновому режимі. Файли будуть доступні під час перевірки.
-      upsale:
-        description: "Переконайтеся, що вивантажені в OpenProject файли перевіряються на віруси перед тим, як стають доступними для інших користувачів."
       actions:
         delete: "Видалити файл"
         quarantine: "Перенести файл на карантин"
@@ -3898,6 +3945,9 @@ uk:
       section_holidays_and_closures: "Свята й вихідні"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Простий текст"
@@ -3933,8 +3983,6 @@ uk:
     При використанні спеціальних полів: Майте на увазі, що спеціальні поля повинні бути активовані для кожного проекту.
   text_custom_field_hint_activate_per_project_and_type: >
     Користувальницькі поля повинні бути активовані за типом робочого пакета та проекту.
-  text_wp_status_read_only_html: >
-    У версії Enterprise Edition з’являться такі додаткові доповнення для полів статусу пакетів робіт: <br> <ul><li><b>Дозволити позначати пакети робіт певних статусів як доступні тільки для читання</b></li> </ul>
   text_project_custom_field_html: >
     У версії Enterprise з’являться такі додаткові доповнення для користувацьких полів проєктів: <br> <ul><li><b>Додавати користувацькі поля проєктів у список проєктів для створення режиму перегляду портфеля проєктів</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4482,27 +4530,3 @@ uk:
     description: "Додає постачальника OmniAuth SAML в OpenProject"
   enterprise_plans:
     legacy_enterprise: "План Enterprise"
-  enterprise_features:
-    baseline_comparison: Порівняння з вихідним рівнем
-    board_view: Подання дошки
-    conditional_highlighting: Умовне виділення
-    custom_actions: Користувацькі дії
-    custom_field_hierarchies: Ієрархії користувацьких полів
-    customize_life_cycle: Налаштування життєвого циклу
-    date_alerts: Оповіщення про дати
-    define_custom_style: Визначення користувацького стилю
-    edit_attribute_groups: Редагування груп атрибутів
-    gantt_pdf_export: Експорт діаграми Ґантта в PDF
-    grid_widget_wp_graph: Графік пакета робіт у вигляді сітки
-    ldap_groups: Групи LDAP
-    one_drive_sharepoint_file_storage: Сховище файлів OneDrive / SharePoint
-    placeholder_users: Прототипи користувачів
-    project_list_sharing: Спільне використання списку проєктів
-    readonly_work_packages: Пакети робіт лише для читання
-    sso_auth_providers: Постачальники автентифікації SSO
-    team_planner_view: Подання командного планувальника
-    two_factor_authentication: Двофакторна автентифікація
-    virus_scanning: Пошук вірусів у вкладеннях
-    work_package_query_relation_columns: Стовпці зв’язків запиту пакета робіт
-    work_package_sharing: Спільне використання пакета робіт
-    work_package_subject_generation: Створення теми пакета робіт

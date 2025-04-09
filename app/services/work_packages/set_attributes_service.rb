@@ -70,8 +70,8 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
       update_dates
     end
     shift_dates_to_soonest_working_days
-    update_duration
-    update_derivable
+    update_duration_to_one_day_for_milestones
+    update_derivable_date_attribute
     update_progress_attributes
     update_project_dependent_attributes
     reassign_invalid_status_if_type_changed
@@ -79,8 +79,8 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
     set_cause_for_readonly_attributes
   end
 
-  def derivable_attribute
-    derivable_attribute_by_others_presence || derivable_attribute_by_others_absence
+  def derivable_date_attribute
+    derivable_date_attribute_by_others_presence || derivable_date_attribute_by_others_absence
   end
 
   # Returns a field derivable by the presence of the two others, or +nil+ if
@@ -91,13 +91,8 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
   #
   # If +ignore_non_working_days+ has been changed, try deriving +due_date+ and
   # +start_date+ before +duration+.
-  def derivable_attribute_by_others_presence
-    fields =
-      if work_package.ignore_non_working_days_changed?
-        %i[due_date start_date duration]
-      else
-        %i[duration due_date start_date]
-      end
+  def derivable_date_attribute_by_others_presence
+    fields = %i[duration due_date start_date]
     fields.find { |field| derivable_by_others_presence?(field) }
   end
 
@@ -116,7 +111,7 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
   #
   # Matching is done in the order :duration, :due_date, :start_date. The first
   # one to match is returned.
-  def derivable_attribute_by_others_absence
+  def derivable_date_attribute_by_others_absence
     %i[duration due_date start_date].find { |field| derivable_by_others_absence?(field) }
   end
 
@@ -145,8 +140,8 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
   end
 
   # rubocop:disable Metrics/AbcSize
-  def update_derivable
-    case derivable_attribute
+  def update_derivable_date_attribute
+    case derivable_date_attribute
     when :duration
       work_package.duration =
         if work_package.milestone?
@@ -320,7 +315,7 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
     work_package.due_date = days.soonest_working_day(work_package.due_date)
   end
 
-  def update_duration
+  def update_duration_to_one_day_for_milestones
     work_package.duration = 1 if work_package.milestone?
   end
 
@@ -365,7 +360,7 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
     available_types = work_package.project.types.order(:position)
 
     work_package.type = available_types.first
-    update_duration
+    update_duration_to_one_day_for_milestones
     unify_milestone_dates
 
     reassign_status assignable_statuses
@@ -470,14 +465,14 @@ class WorkPackages::SetAttributesService < BaseServices::SetAttributes
     start = work_package.parent&.start_date
     due = work_package.due_date || work_package.parent&.due_date
 
-    (start && !due) || ((due && start) && (start < due))
+    (start && !due) || (due && start && (start < due))
   end
 
   def parent_due_later_than_start?
     due = work_package.parent&.due_date
     start = work_package.start_date || work_package.parent&.start_date
 
-    (due && !start) || ((due && start) && (due > start))
+    (due && !start) || (due && start && (due > start))
   end
 
   def set_cause_for_readonly_attributes

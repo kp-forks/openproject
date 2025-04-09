@@ -65,6 +65,7 @@ uk:
       metadata:
         dialog: "Це URL-адреса, за якою доступні метадані SAML OpenProject. Ви можете використовувати її для налаштування свого постачальника ідентифікаційних даних:"
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: Підключіть OpenProject до постачальника ідентифікаційних даних SAML
       request_attributes:
         title: 'Запитувані атрибути'

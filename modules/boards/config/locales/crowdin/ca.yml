@@ -6,6 +6,10 @@ ca:
   permission_show_board_views: "Veure els taulells"
   permission_manage_board_views: "Administra els taulells"
   project_module_board_view: "Taulells"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Taulell"
     label_boards: "Taulells"
@@ -34,6 +38,3 @@ ca:
         Taulell amb columnes automàtiques per subprojectes. Movent els paquets de treball a altres llistes actualitzarà el (sub-)projecte.
       subtasks: >
         Taulell amb columnes automàtiques per subelements. Movent els paquets de treball a altres llistes actualitzarà el  paquet pare.
-    upsale:
-      teaser_text: 'T''agradaria automatitzar els teus processos de treball amb taulells? Els taulells avançats són una extensió de l''edició Enterprise. Si us plau, actualitza a un pla de pagament.'
-      upgrade: 'Actualitza ara'

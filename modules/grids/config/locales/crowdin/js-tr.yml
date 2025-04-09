@@ -1,12 +1,13 @@
 tr:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Bileşen ekle'
       remove: 'Bileşeni kaldır'
       configure: 'Bileşeni yapılandır'
-      upsale:
-        text: "İş paketi grafiği pencere öğesi gibi bazı pencere öğeleri yalnızca Enterprise sürümünde mevcuttur."
-        link: 'Enterprise sürümü.'
       widgets:
         missing_permission: "Bu bileşeni görüntülemek için gerekli izinlere sahip değilsiniz."
         custom_text:

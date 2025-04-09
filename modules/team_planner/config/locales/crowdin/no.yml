@@ -6,12 +6,16 @@
   permission_view_team_planner: "Vis teamplanlegger"
   permission_manage_team_planner: "Administrer teamplanlegger"
   project_module_team_planner_view: "Teamplanleggere"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Teamplanlegger"
     label_new_team_planner: "Ny teamplanlegger"
     label_create_new_team_planner: "Opprett ny teamplanlegger"
     label_team_planner_plural: "Teamplanleggere"
     label_assignees: "Tildelt"
-    upsale:
-      title: "Teamplanlegger"
-      description: "Få en fullstendig oversikt over ditt teams planlegging med Team Planner. Utvid, forkort og dra-og-slipp arbeidspakker for å endre datoer, flytte dem eller endre deltakere."

@@ -522,46 +522,47 @@ RSpec.describe "Datepicker modal logic test cases (WP #43539)", :js, with_settin
   describe "when all values set, changing include NWD to true (Scenario 15)" do
     let(:current_attributes) do
       {
-        start_date: Date.parse("2021-02-11"),
-        due_date: Date.parse("2021-02-16"),
-        duration: 4
+        start_date: Date.parse("2025-01-09"),
+        due_date: Date.parse("2025-01-14"),
+        duration: 4,
+        ignore_non_working_days: false
       }
     end
 
-    it "conserves the duration and updates the finish date" do
-      datepicker.expect_start_date "2021-02-11"
-      datepicker.expect_due_date "2021-02-16"
+    it "conserves the finish date and updates the duration" do
+      datepicker.expect_start_date "2025-01-09"
+      datepicker.expect_due_date "2025-01-14"
       datepicker.expect_duration 4
 
       datepicker.toggle_working_days_only
 
-      datepicker.expect_start_date "2021-02-11"
-      datepicker.expect_due_date "2021-02-14"
-      datepicker.expect_duration 4
+      datepicker.expect_start_date "2025-01-09"
+      datepicker.expect_due_date "2025-01-14"
+      datepicker.expect_duration 6
     end
   end
 
   describe "when all values set and include NWD true, changing include NWD to false (Scenario 16)" do
     let(:current_attributes) do
       {
-        start_date: Date.parse("2021-02-11"),
-        due_date: Date.parse("2021-02-14"),
-        duration: 4,
+        start_date: Date.parse("2025-01-09"),
+        due_date: Date.parse("2025-01-14"),
+        duration: 6,
         ignore_non_working_days: true
       }
     end
 
-    it "conserves the duration and updates the finish date" do
-      datepicker.expect_start_date "2021-02-11"
-      datepicker.expect_due_date "2021-02-14"
-      datepicker.expect_duration 4
+    it "conserves the finish date and updates the duration" do
+      datepicker.expect_start_date "2025-01-09"
+      datepicker.expect_due_date "2025-01-14"
+      datepicker.expect_duration 6
       datepicker.expect_working_days_only false
 
       datepicker.toggle_working_days_only
 
       datepicker.expect_working_days_only true
-      datepicker.expect_start_date "2021-02-11"
-      datepicker.expect_due_date "2021-02-16"
+      datepicker.expect_start_date "2025-01-09"
+      datepicker.expect_due_date "2025-01-14"
       datepicker.expect_duration 4
     end
   end
@@ -569,54 +570,54 @@ RSpec.describe "Datepicker modal logic test cases (WP #43539)", :js, with_settin
   describe "when all values set and include NWD true, changing include NWD to false (Scenario 17)" do
     let(:current_attributes) do
       {
-        start_date: Date.parse("2021-02-13"),
-        due_date: Date.parse("2021-02-14"),
+        start_date: Date.parse("2025-01-11"),
+        due_date: Date.parse("2025-01-12"),
         duration: 2,
         ignore_non_working_days: true
       }
     end
 
-    it "shifts the start date to soonest working day, and updates finish date to conserve duration" do
-      datepicker.expect_start_date "2021-02-13"
-      datepicker.expect_due_date "2021-02-14"
+    it "shifts the start and finish dates to soonest working day, and updates duration accordingly" do
+      datepicker.expect_start_date "2025-01-11"
+      datepicker.expect_due_date "2025-01-12"
       datepicker.expect_duration 2
       datepicker.expect_working_days_only false
 
       datepicker.toggle_working_days_only
 
       datepicker.expect_working_days_only true
-      datepicker.expect_start_date "2021-02-15"
-      datepicker.expect_due_date "2021-02-16"
-      datepicker.expect_duration 2
+      datepicker.expect_start_date "2025-01-13"
+      datepicker.expect_due_date "2025-01-13"
+      datepicker.expect_duration 1
     end
   end
 
   describe "when all values set and include NWD true, changing include NWD to false (Scenario 18)" do
     let(:current_attributes) do
       {
-        start_date: Date.parse("2021-02-13"),
-        due_date: Date.parse("2021-02-23"),
+        start_date: Date.parse("2025-01-11"),
+        due_date: Date.parse("2025-01-21"),
         duration: 11,
         ignore_non_working_days: true
       }
     end
 
-    it "shifts the start date to soonest working day, and updates finish date to conserve duration" do
-      datepicker.expect_start_date "2021-02-13"
-      datepicker.expect_due_date "2021-02-23"
+    it "shifts the start date to soonest working day, conserves the finish date, and updates duration accordingly" do
+      datepicker.expect_start_date "2025-01-11"
+      datepicker.expect_due_date "2025-01-21"
       datepicker.expect_duration 11
       datepicker.expect_working_days_only false
 
       datepicker.toggle_working_days_only
 
       datepicker.expect_working_days_only true
-      datepicker.expect_start_date "2021-02-15"
-      datepicker.expect_due_date "2021-03-01"
-      datepicker.expect_duration 11
+      datepicker.expect_start_date "2025-01-13"
+      datepicker.expect_due_date "2025-01-21"
+      datepicker.expect_duration 7
 
-      apply_and_expect_saved duration: 11,
-                             start_date: Date.parse("2021-02-15"),
-                             due_date: Date.parse("2021-03-01"),
+      apply_and_expect_saved duration: 7,
+                             start_date: Date.parse("2025-01-13"),
+                             due_date: Date.parse("2025-01-21"),
                              ignore_non_working_days: false
     end
   end

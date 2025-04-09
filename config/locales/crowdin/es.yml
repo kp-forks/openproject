@@ -63,9 +63,6 @@ es:
         main-menu-bg-selected-background: "Menú principal seleccionado"
         main-menu-bg-hover-background: "Menú principal al mantener el cursor"
       custom_colors: "Colores personalizados"
-      customize: "Personalice su instalación de OpenProject con su logotipo y colores."
-      enterprise_notice: "Como un agradecimiento especial por su contribución financiera para desarrollar OpenProject, esta pequeña extensión solo está disponible para suscriptores de Enterprise."
-      enterprise_more_info: "Nota: el logotipo utilizado será de acceso público."
       manage_colors: "Editar opciones de selección de colores"
       instructions:
         primary-button-color: "Color de acento fuerte, utilizado para el botón más importante de una pantalla."
@@ -213,9 +210,6 @@ es:
     new: "Nueva Acción personalizada"
     edit: "Editar Accion Personalizada %{name}"
     execute: "Ejecutar %{name}"
-    upsale:
-      title: "Acciones personalizadas"
-      description: "Las acciones personalizadas son accesos directos de un solo clic para crear conjuntos de acciones predefinidas que pueden utilizarse en ciertos paquetes de trabajo basados en el estado, rol, tipo o proyecto."
   custom_fields:
     admin:
       custom_field_projects:
@@ -245,8 +239,6 @@ es:
           zero: ningún subelemento
           one: 1 subelemento
           other: "%{count} subelementos"
-    upsale:
-      custom_field_format_hierarchy: "¿Necesita una jerarquía en sus campos personalizados para paquetes de trabajo?"
     text_add_new_custom_field: >
       Para agregar nuevos campos personalizados a un proyecto, primero debe crearlos, y luego añadirlos a este proyecto.
     is_enabled_globally: "Está activado a nivel global"
@@ -542,10 +534,6 @@ es:
         Todas las repeticiones del usuario de marcador de posición (por ejemplo, como asignado, responsable u otros valores de usuario) se reasignarán a una cuenta denominada «Usuario eliminado». Como los datos de todas las cuentas eliminadas se reasignarán a esta cuenta, no podrán distinguirse los datos del usuario de los datos creados con cualquier otra cuenta eliminada.
       irreversible: "Esta acción no se puede deshacer"
       confirmation: "Escriba el nombre de usuario de marcador de posición %{name} para confirmar la eliminación."
-    upsale:
-      title: Usuarios de marcador de posición
-      description: >
-        Los usuarios de marcadores de posición son una forma de asignar paquetes de trabajo a usuarios que no son parte de su proyecto. Pueden ser útiles en múltiples escenarios; por ejemplo, si necesita rastrear las tareas de un recurso que aún no está nombrado o disponible, o si no quieres dar acceso a esa persona a OpenProject pero quieres seguir las tareas que se le han asignado.
   prioritiies:
     edit:
       priority_color_text: |
@@ -602,8 +590,6 @@ es:
     edit:
       form_configuration:
         tab: "Configuración del formulario"
-      more_info_text_html: >
-        Enterprise te permite personalizar el formulario de configuración con estas extensiones adicionales: <br><ul class="%{list_styling_class}"><li><b>Añade nuevos grupos de atributo</b></li> <li><b>Renombra grupos de atributo</b></li> <li><b>Añada tablas de paquetes de trabajo relacionados</b></li> </ul>
       projects:
         tab: "Proyectos"
         enabled_projects: "Proyectos habilitados"
@@ -1047,6 +1033,7 @@ es:
         consented_at: "Consentido en"
       user_preference:
         comments_sorting: "Mostrar comentarios"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Modo de accesibilidad"
         auto_hide_popups: "Auto-ocultar notificaciones satisfactorias"
         warn_on_leaving_unsaved: "Avisarme cuando salga de un paquete de trabajo con cambios sin guardar"
@@ -1966,17 +1953,78 @@ es:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: iad (ltr)
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Extensión Enterprise"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Más información"
-      automatic_subject_generation:
-        description: "Cree asuntos generados automáticamente utilizando atributos y texto referenciados."
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
+        description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Personalice la configuración del formulario con estas extensiones:"
-        add_groups: "Añadir nuevos grupos de atributos"
-        rename_groups: "Cambiar nombre de grupos de atributos"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Actividades de seguimiento del tiempo"
   enumeration_work_package_priorities: "Prioridades del paquete de trabajo"
   enumeration_reported_project_statuses: "Estatus del proyecto reportado"
@@ -3241,6 +3289,7 @@ es:
   notice_successful_delete: "Eliminado con éxito."
   notice_successful_cancel: "Cancelación exitosa."
   notice_successful_update: "Actualización correcta."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Actualización correcta. Los campos personalizados de los tipos ya activados se activan automáticamente en el formulario de paquete de trabajo. <a href="%{url}" target="_blank">Ver más</a>.
   notice_to_many_principals_to_display: "Hay demasiados resultados.\nAfine la búsqueda ingresando el nombre del nuevo miembro (o grupo)."
@@ -3734,8 +3783,6 @@ es:
         Se han analizado los archivos restantes. Hay %{file_count} en cuarentena. Está siendo redirigido a la página de cuarentena. Utilice esta página para eliminar o sobreescribir los archivos en cuarentena.
       remaining_rescanned_files: >
         El escaneado de virus se ha activado correctamente. Hay %{file_count} que se cargaron anteriormente y aún deben ser escaneados. Este proceso se ha programado en segundo plano. Los archivos permanecerán accesibles durante el escaneado.
-      upsale:
-        description: "Asegúrese de que los archivos cargados en OpenProject se analizan en busca de virus antes de que otros usuarios puedan acceder a ellos."
       actions:
         delete: "Eliminar el archivo"
         quarantine: "Ponga el archivo en cuarentena"
@@ -3821,6 +3868,9 @@ es:
       section_holidays_and_closures: "Vacaciones y cierres"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Texto sin formato"
@@ -3856,8 +3906,6 @@ es:
     Si utiliza campos personalizados: tenga en cuenta que los campos personalizados deben activarse también en cada proyecto por separado.
   text_custom_field_hint_activate_per_project_and_type: >
     Los campos personalizados se deben activar en cada tipo de paquete de trabajo y en cada proyecto por separado.
-  text_wp_status_read_only_html: >
-    Enterprise añadirá estas extensiones para los campos de estado de los paquetes de trabajo: <br> <ul> <li><b>Permitir marcar como solo lectura los paquetes de trabajo en estados específicos</b></li> </ul>
   text_project_custom_field_html: >
     Enterprise añadirá estas extensiones para los campos personalizados de los proyectos: <br> <ul> <li><b>Añadir campos personalizados para proyectos a tu lista de proyectos para crear una vista porfolio de proyectos</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4401,27 +4449,3 @@ es:
     description: "Añade el proveedor OmniAuth SAML a OpenProject"
   enterprise_plans:
     legacy_enterprise: "Plan Enterprise"
-  enterprise_features:
-    baseline_comparison: Comparación de base de referencia
-    board_view: Vista de tablero
-    conditional_highlighting: Resaltado condicional
-    custom_actions: Acciones personalizadas
-    custom_field_hierarchies: Jerarquías de campos personalizados
-    customize_life_cycle: Personalizar el ciclo de vida
-    date_alerts: Alertas de fecha
-    define_custom_style: Definir estilo personalizado
-    edit_attribute_groups: Editar grupos de atributos
-    gantt_pdf_export: Exportación de Gantt a PDF
-    grid_widget_wp_graph: Gráfico de paquetes de trabajo de widget de cuadrícula
-    ldap_groups: Grupos LDAP
-    one_drive_sharepoint_file_storage: Almacenamiento de archivos OneDrive/SharePoint
-    placeholder_users: Usuarios de marcadores de posición
-    project_list_sharing: Compartición de la lista de proyectos
-    readonly_work_packages: Paquetes de trabajo de solo lectura
-    sso_auth_providers: Proveedores de autenticación SSO
-    team_planner_view: Vista del planificador de equipos
-    two_factor_authentication: Autenticación de dos factores
-    virus_scanning: Escaneado de virus en adjuntos
-    work_package_query_relation_columns: Columnas de relación de consulta de paquetes de trabajo
-    work_package_sharing: Comparticiones de paquete de trabajo
-    work_package_subject_generation: Generación de temas del paquete de trabajo

@@ -6,12 +6,16 @@ mn:
   permission_view_team_planner: "Багийн төлөвлөгчийг харах"
   permission_manage_team_planner: "Багийн төлөвлөгчийг удирдах"
   project_module_team_planner_view: "Багийн төлөвлөгчид"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Багийн төлөвлөгч"
     label_new_team_planner: "Шинэ багийн төлөвлөгч"
     label_create_new_team_planner: "Шинэ баг төлөвлөгч үүсгэх"
     label_team_planner_plural: "Багийн төлөвлөгчид"
     label_assignees: "Томилогдсон хүмүүс"
-    upsale:
-      title: "Багийн төлөвлөгч"
-      description: "Багийн төлөвлөгч-ийн тусламжтайгаар багийнхаа төлөвлөлтийн талаарх бүрэн танилцуулгатай танилцаарай. Огноог өөрчлөх, зөөх эсвэл томилогдсон хүмүүсийг өөрчлөхийн тулд ажлын багцуудыг сунгаж, богиносгож, чирэх, буулгах боломжтой."

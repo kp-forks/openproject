@@ -6,12 +6,16 @@ bg:
   permission_view_team_planner: "Вижте екипния плановик"
   permission_manage_team_planner: "Управлявайте екипния плановик"
   project_module_team_planner_view: "Екипни плановици"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Екипен плановик"
     label_new_team_planner: "Нов екипен плановик"
     label_create_new_team_planner: "Създайте нов екипен плановик"
     label_team_planner_plural: "Екипни плановици"
     label_assignees: "Правоприемници"
-    upsale:
-      title: "Екипен плановик"
-      description: "Получете пълен преглед на планирането на вашия екип с Team Planner. Разтягайте, съкращавайте и плъзгайте и пускайте работни пакети, за да промените датите, да ги преместите или да промените възложителите."

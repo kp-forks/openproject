@@ -632,9 +632,6 @@ ja:
         property_is: "は%{difference_in_days}後。"
         property_was: "は、 %{difference_in_days} 前です。"
         property_is_deleted: "は削除されました。"
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "及び"
         and_more_users:
@@ -696,7 +693,6 @@ ja:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Project-specific notification settings"
@@ -1047,8 +1043,6 @@ ja:
       sharing:
         title: "Share work package"
         show_all_users: "ワークパッケージが共有されたすべてのユーザーを表示"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "ワークパッケージテーブルを設定する"
         summary: "作業項目の行と、作業項目の属性の列から成る表。"
@@ -1083,10 +1077,6 @@ ja:
           manually: "手動"
           warning: "自動並び替えモードをアクティブにすると、以前のソートが失われます。"
         columns_help_text: "テーブルビューに列を追加するには、上の入力フィールドを使用します。列をドラッグアンドドロップして並べ替えることができます。"
-        upsale:
-          attribute_highlighting: "全体から目立つように特定の作業項目が必要ですか？"
-          relation_columns: "ワークパッケージリストに関係を表示する必要がありますか?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "関係タイプでワークパッケージをフィルタ"
       tabs:
@@ -1297,9 +1287,7 @@ ja:
       clear: "クリア"
       apply: "適用"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "時間"

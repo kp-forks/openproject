@@ -1,12 +1,13 @@
 ko:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: '위젯 추가'
       remove: '위젯 제거'
       configure: '위젯 구성'
-      upsale:
-        text: "작업 패키지 그래프 위젯 같은 일부 위젯은 다음에서만 사용 가능합니다:"
-        link: 'Enterprise edition'
       widgets:
         missing_permission: "이 위젯을 보는 데 필요한 권한이 없습니다."
         custom_text:

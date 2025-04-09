@@ -631,9 +631,6 @@ lt:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Datos įspėjimai"
-          description: "Su datos įspėjimais jus informuos apie ateinančias pradžios ir pabaigos datas, kad niekada nepraleistumėte ar nepamirštumėte svarbių terminų."
       center:
         label_actor_and: "ir"
         and_more_users:
@@ -698,7 +695,6 @@ lt:
           date_alerts:
             title: "Datos įspėjimai"
             description: "Automatiniai pranešimai apie artėjančias svarbias atvirų darbo paketų, su kuriais jūs susiję (paskirtasis, atsakingas ar stebėtojas), datas."
-            teaser_text: "Su datos įspėjimais jus informuos apie ateinančias pradžios ir pabaigos datas, kad niekada nepraleistumėte ar nepamirštumėte svarbių terminų."
           overdue: Kai pavėluota
         project_specific:
           title: "Konkrečių projektų pranešimų nustatymai"
@@ -1049,8 +1045,6 @@ lt:
       sharing:
         title: "Dalintis darbo paketu"
         show_all_users: "Rodyti visus naudotojus, su kuriais bendrinamas šis darbo paketas"
-        upsale:
-          description: "Bendrinkite darbo paketus su naudotojais, kurie nėra projekto nariai."
       table:
         configure_button: "Sukonfigūruokite darbų paketo lentelę"
         summary: "Lentelė su eilutėmis, sudarytomis iš darbų paketų, ir stulpeliais, sudarytais iš darbų paketų atributų."
@@ -1085,10 +1079,6 @@ lt:
           manually: "Rankinis"
           warning: "Aktyvuojant automatinį rikiavimo režimą jūs prarasite savo ankstesnį rikiavimą."
         columns_help_text: "Aukščiau esančioje įvedimo eilutėje pridėkite stulpelius į lentelės vaizdą. Galite pele perkelti stulpelius, jei reikalinga kita jų tvarka."
-        upsale:
-          attribute_highlighting: "Reikia išskirti tam tikrus darbo paketus iš didelės masės?"
-          relation_columns: "Ar reikia matyti ryšius darbų paketų sąraše?"
-          check_out_link: "Patikrinkite Enterprise versiją."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtruokite darbo paketus pagal sąryšio tipą"
       tabs:
@@ -1308,9 +1298,7 @@ lt:
       clear: "Išvalyti"
       apply: "Taikyti"
       header_description: "Paryškinti pakeitimus, padarytus šiame sąraše, nuo bet kokio laiko momento praeityje."
-      enterprise_header_description: "Paryškinti pakeitimus, padarytus šiame sąraše, nuo bet kokio laiko momento su Enterprise versija."
       show_changes_since: "Rodyti pakeitimus nuo"
-      baseline_comparison: "Bazinės linijos palyginimas"
       help_description: "Bazinės linijos atskaitos laiko zona."
       time_description: "Jūsų lokaliu laiku: %{datetime}"
       time: "Laikas"

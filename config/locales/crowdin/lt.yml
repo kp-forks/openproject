@@ -63,9 +63,6 @@ lt:
         main-menu-bg-selected-background: "Pagrindinis meniu kai pasirinktas"
         main-menu-bg-hover-background: "Pagrindinis meniu užvažiavus pele"
       custom_colors: "Pasirinktinės spalvos"
-      customize: "Tinkinkite jūsų OpenProject naudodami savo logotipą ir spalvas."
-      enterprise_notice: "Kaip specialus „AČIŪ!“ už finansinę paramą kuriant OpenProject, šį mažytį priedą galima naudoti tik „Enterprise Edition“ paramos prenumeratoriams."
-      enterprise_more_info: "Pastaba: panaudotas logotipas bus viešai prieinamas."
       manage_colors: "Redaguoti spalvos pasirinkimo variantus"
       instructions:
         primary-button-color: "Stipraus akcento spalva, naudojama svarbiausiam ekrano mygtukui."
@@ -212,9 +209,6 @@ lt:
     new: "Naujas pasirinktinis veiksmas"
     edit: "Redaguoti pasirinktinį veiksmą %{name}"
     execute: "Vykdyti %{name}"
-    upsale:
-      title: "Pasirinktiniai veiksmai"
-      description: "Savo veiksmai yra vieno paspaudimo kombinacijos, leidžiančios nustatyti veiksmus, kuriuos galite padaryti preinamais kai kuriuose darbo paketuose pagal jų būseną, rolę, tipą ar projektą."
   custom_fields:
     admin:
       custom_field_projects:
@@ -244,8 +238,6 @@ lt:
           zero: no sub-items
           one: 1 sub-item
           other: "%{count} sub-items"
-    upsale:
-      custom_field_format_hierarchy: "Need a hierarchy in your custom fields for work packages?"
     text_add_new_custom_field: >
       Norėdami pridėti naujus pritaikytus laukelius prie projekto, pirmiausia reikia juos sukurti. Tik tada yra galimybė juos pridėti prie šio projekto.
     is_enabled_globally: "Yra įgalintas globaliai"
@@ -555,10 +547,6 @@ lt:
         Visose vietose, kur naudojamas statytinis naudotojas (t.y. kaip paskirtas, atsakingas ar kitose naudotojo vietose) jis bus pakeistas į naudotoją „Ištrintas naudotojas“. Kadangi visų ištrintų naudotojų visi duomenys yra priskiriami šiam naudotojui, nebebus galima atskirti šio naudotojo sukurtų duomenų, nuo tų, kuriuos sukūrė kiti ištrinti naudotojai.
       irreversible: "Šis veiksmas negrįžtamas"
       confirmation: "Naikinimo patvirtinimui įveskite statytinio naudotojo vardą %{name}."
-    upsale:
-      title: Statytiniai naudotojai
-      description: >
-        Statytiniai naudotojai leidžia paskirti darbo paketus naudotojams, kurių nėra jūsų projekte. Jie gali būti naudingi įvairiose situacijose. Pavyzdžiui jums reikia sekti užduotis resursų, kurie dar neįvardinti ar negalimi arba jūs nenorite duoti konkrečiam asmeniui prieigos prie OpenProject, bet vis tiek norite sekti jiems paskirtas užduotis.
   prioritiies:
     edit:
       priority_color_text: |
@@ -617,8 +605,6 @@ lt:
     edit:
       form_configuration:
         tab: "Formos konfigūracija"
-      more_info_text_html: >
-        Enterprise versija leidžia jums keisti formos konfigūraciją naudojant papildomus priedus: <br> <ul class="%{list_styling_class}"> <li><b>Pridėti naujas atributų grupes</b></li> <li><b>Pervadinti atributų grupes</b></li> <li><b>Pridėti susijusių darbo paketų lentelę</b></li> </ul>
       projects:
         tab: "Projektai"
         enabled_projects: "Įgalinti projektai"
@@ -1064,6 +1050,7 @@ lt:
         consented_at: "Sutikimo laikas"
       user_preference:
         comments_sorting: "Rodyti komentarus"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Pritaikymas neįgaliesiems"
         auto_hide_popups: "Automatiškai slėpti sėkmės pranešimus"
         warn_on_leaving_unsaved: "Įspėti mane, kai palieku darbų paketą su neišsaugotais pakeitimais"
@@ -2043,17 +2030,78 @@ lt:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: ltr
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Enterprise priedas"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Daugiau informacijos"
-      automatic_subject_generation:
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Pritaikyti sau formos konfigūraciją su šiais naujais priedais:"
-        add_groups: "Pridėti naujas atributų grupes"
-        rename_groups: "Pervadinti atributų grupes"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Laiko sekimo veiklos"
   enumeration_work_package_priorities: "Darbų paketo prioritetai"
   enumeration_reported_project_statuses: "Pranešta projekto būsena"
@@ -3320,6 +3368,7 @@ lt:
   notice_successful_delete: "Sėkmingas panaikinimas."
   notice_successful_cancel: "Successful cancellation."
   notice_successful_update: "Sėkmingai atnaujinta."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Sėkmingas atnaujinimas. Savi aktyvuotų tipų laukai automatiškai aktivuoti darbo paketų formose. <a href="%{url}" target="_blank">Skaitykite daugiau</a>.
   notice_to_many_principals_to_display: "Per daug rezultatų. Susiaurinkite paiešką pradėdami įvesti naujo nario (ar grupės) pavadinimą."
@@ -3813,8 +3862,6 @@ lt:
         Likę failai buvo patikrinti. Karantine yra %{file_count} . Esate nukreipiami į karantino puslapį. Naudokitės šiuo puslapiu norėdami ištrinti arba pakeisti karantine esančius failus.
       remaining_rescanned_files: >
         Virusų skenavimas sėkmingai įjungtas. Yra %{file_count}, kurie buvo įkelti anksčiau ir turi būti patikrinti. Šis darbas suplanuotas fone. Failai liks prieinami tikrinimo metu.
-      upsale:
-        description: "Užtikrinkite, kad į OpenProject įkelti failai būtų patikrinti nuo virusų prieš padarant juos prieinamus kitiems naudotojams."
       actions:
         delete: "Trinti failą"
         quarantine: "Karantinuoti failą"
@@ -3900,6 +3947,9 @@ lt:
       section_holidays_and_closures: "Nedarbo dienos"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Paprastas tekstas"
@@ -3935,8 +3985,6 @@ lt:
     Kai naudojami pritaikyti laukai: Turėkite omenyje, kad pritaikyti laukeliai turi būti aktyvuoti atkirtai kiekviename projekte.
   text_custom_field_hint_activate_per_project_and_type: >
     Pritaikyti laukeliai turi būti kiekviename darbų paketų tipe ir kiekviename projekte.
-  text_wp_status_read_only_html: >
-    Enterprise versija leis šiuos papildomus darbo paketų priedus būsenos laukams: <br> <ul> <li><b>Galimybė pažymėti darbo paketus tik skaitymui kai kurioms būsenoms</b></li> </ul>
   text_project_custom_field_html: >
     Enterprise versija pridės šiuos papildomus priedus projekto saviems laukams: <br> <ul> <li><b>Galimybė pridėti savo laukus į jūsų projekto sąrašą ir kurti projekto projektų portfolio vaizdą</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4484,27 +4532,3 @@ lt:
     description: "Prideda OmniAuth SAML tiekėja į OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF Export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

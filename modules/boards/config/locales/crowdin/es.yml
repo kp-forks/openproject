@@ -6,6 +6,10 @@ es:
   permission_show_board_views: "Ver tableros"
   permission_manage_board_views: "Administrar tableros"
   project_module_board_view: "Tableros"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Tablero"
     label_boards: "Tableros"
@@ -34,6 +38,3 @@ es:
         Tablero con columnas automáticas para subproyectos. Al arrastrar paquetes de trabajo a otras listas, se actualizan los (sub)proyectos en consecuencia.
       subtasks: >
         Tablero con columnas automáticas para subelementos. Al arrastrar paquetes de trabajo a otras listas, se actualizan los elementos principales en consecuencia.
-    upsale:
-      teaser_text: '¿Quieres automatizar tus flujos de trabajo con tableros? Los tableros avanzados son una extensión de Enterprise. Mejores su plan a uno de pago.'
-      upgrade: 'Mejorar ahora'

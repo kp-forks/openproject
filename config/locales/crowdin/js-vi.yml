@@ -631,9 +631,6 @@ vi:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Cảnh báo ngày"
-          description: "Với cảnh báo ngày, bạn sẽ được thông báo về các ngày bắt đầu hoặc kết thúc sắp tới để không bao giờ bỏ lỡ hoặc quên hạn chót quan trọng."
       center:
         label_actor_and: "và"
         and_more_users:
@@ -695,7 +692,6 @@ vi:
           date_alerts:
             title: "Cảnh báo ngày"
             description: "Thông báo tự động khi các ngày quan trọng sắp đến cho các gói công việc mở mà bạn tham gia (người được giao, người chịu trách nhiệm hoặc người theo dõi)."
-            teaser_text: "Với cảnh báo ngày, bạn sẽ được thông báo về các ngày bắt đầu hoặc kết thúc sắp tới để không bao giờ bỏ lỡ hoặc quên hạn chót quan trọng."
           overdue: Khi quá hạn
         project_specific:
           title: "Cài đặt thông báo theo dự án"
@@ -1046,8 +1042,6 @@ vi:
       sharing:
         title: "Chia sẻ gói công việc"
         show_all_users: "Hiển thị tất cả người dùng mà gói công việc đã được chia sẻ"
-        upsale:
-          description: "Chia sẻ gói công việc với người dùng không phải là thành viên của dự án."
       table:
         configure_button: "Cấu hình bảng gói công việc"
         summary: "Bảng với hàng gói công việc và cột thuộc tính gói công việc."
@@ -1082,10 +1076,6 @@ vi:
           manually: "Thủ công"
           warning: "Bạn sẽ mất sắp xếp trước đó khi kích hoạt chế độ sắp xếp tự động."
         columns_help_text: "Sử dụng trường đầu vào phía trên để thêm cột vào chế độ xem bảng của bạn. Bạn có thể kéo và thả các cột để thay đổi thứ tự của chúng."
-        upsale:
-          attribute_highlighting: "Cần làm nổi bật các gói công việc nhất định khỏi đám đông?"
-          relation_columns: "Cần xem các mối quan hệ trong danh sách gói công việc?"
-          check_out_link: "Xem thêm phiên bản Doanh nghiệp."
         relation_filters:
           filter_work_packages_by_relation_type: "Lọc gói công việc theo loại mối quan hệ"
       tabs:
@@ -1296,9 +1286,7 @@ vi:
       clear: "Xóa"
       apply: "Áp dụng"
       header_description: "Nổi bật các thay đổi đã thực hiện đối với danh sách này kể từ bất kỳ thời điểm nào trong quá khứ."
-      enterprise_header_description: "Nổi bật các thay đổi đã thực hiện đối với danh sách này kể từ bất kỳ thời điểm nào trong quá khứ với phiên bản Doanh nghiệp."
       show_changes_since: "Hiển thị các thay đổi kể từ"
-      baseline_comparison: "So sánh cơ sở"
       help_description: "Múi giờ tham chiếu cho cơ sở."
       time_description: "Theo giờ địa phương của bạn: %{datetime}"
       time: "Thời gian"

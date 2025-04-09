@@ -6,6 +6,10 @@ nl:
   permission_show_board_views: "Bekijk borden"
   permission_manage_board_views: "Beheer boards"
   project_module_board_view: "Borden"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Bord"
     label_boards: "Borden"
@@ -34,6 +38,3 @@ nl:
         Bord met geautomatiseerde kolommen voor subprojecten. Werkpakketten naar andere lijsten verplaatsen, werkt het (sub)project dienovereenkomstig bij.
       subtasks: >
         Bord met geautomatiseerde kolommen voor subelementen. Het verslepen van werkpakketten naar andere lijsten werkt de bovenliggende map bij.
-    upsale:
-      teaser_text: 'Wilt u uw workflows automatiseren met Borden? Geavanceerde borden zijn een Enterprise add-on. Upgrade naar een betaald plan.'
-      upgrade: 'Nu upgraden'

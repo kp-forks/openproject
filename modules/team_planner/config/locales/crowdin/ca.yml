@@ -6,12 +6,16 @@ ca:
   permission_view_team_planner: "Veure planificador d'equips"
   permission_manage_team_planner: "Administrar planificador d'equips"
   project_module_team_planner_view: "Planificadors d'equips"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Planificador d'equips"
     label_new_team_planner: "Nou planificador d'equips"
     label_create_new_team_planner: "Crea un nou planificador d'equips"
     label_team_planner_plural: "Planificadors d'equips"
     label_assignees: "Usuaris assignats"
-    upsale:
-      title: "Planificador d'equips"
-      description: "Obté una visió general completa del teu planificador d'equips amb el Planificador d'Equips. Estira, escurça i arrossega paquets de treball per modificar dates, moure-les o canviar l'usuari assignat. "

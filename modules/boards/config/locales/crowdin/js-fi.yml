@@ -1,14 +1,15 @@
 #English strings go here
 fi:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Luo uusi taulu'
       label_unnamed_board: 'Nimeämätön taulu'
       label_unnamed_list: 'Nimeämätön lista'
       label_board_type: 'Taulun tyyppi'
-      upsale:
-        teaser_text: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
-        upgrade: 'Päivitä nyt'
       lists:
         delete: 'Poista lista'
       version:

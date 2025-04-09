@@ -6,12 +6,16 @@ ar:
   permission_view_team_planner: "عرض مخطط الفريق"
   permission_manage_team_planner: "إدارة مخطط الفريق"
   project_module_team_planner_view: "مخططي الفريق"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "مخطط الفريق"
     label_new_team_planner: "New team planner"
     label_create_new_team_planner: "إنشاء مخطط فريق جديد"
     label_team_planner_plural: "مخططي الفريق"
     label_assignees: "المعينون"
-    upsale:
-      title: "مخطط الفريق"
-      description: "احصل على نظرة عامة كاملة لتخطيط فريقك مع فريق تخطيط العمل. تمديد, اختصار و سحب و إسقاط مجموعات العمل لتعديل التواريخ أو نقلها أو تغيير المحال إليهم."

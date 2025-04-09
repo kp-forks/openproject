@@ -92,6 +92,7 @@ tr:
       custom:
         name: Özel
       upsale:
+        title: "Single Sign-On (SSO) with OpenID connect"
         description: Connect OpenProject to an OpenID connect identity provider
       label_add_new: Yeni bir OpenID sağlayıcı ekle
       label_edit: OpenID sağlayıcıyı düzenle %{name}

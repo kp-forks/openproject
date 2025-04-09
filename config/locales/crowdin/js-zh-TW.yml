@@ -629,9 +629,6 @@ zh-TW:
         property_is: "在 %{difference_in_days}中。"
         property_was: " %{difference_in_days}天前"
         property_is_deleted: "已刪除"
-        upsale:
-          title: "日期提醒"
-          description: "透過日期提醒，您將收到相關通知，這樣您就不會錯過或忘記重要的日期。"
       center:
         label_actor_and: "和"
         and_more_users:
@@ -693,7 +690,6 @@ zh-TW:
           date_alerts:
             title: "日期提醒"
             description: "當「執行者、負責人或監看者」之開啟的工作項目，其重要日期臨近時，自動發出通知。"
-            teaser_text: "透過日期提醒，您將收到即將到來的開始或結束日期的通知，這樣您就不會錯過或忘記重要的截止日期。"
           overdue: 逾期
         project_specific:
           title: "特定專案通知設定"
@@ -1044,8 +1040,6 @@ zh-TW:
       sharing:
         title: "參與工作項目"
         show_all_users: "顯示與之共同參與工作項目的所有用戶"
-        upsale:
-          description: "與不是專案成員的使用者共同參與工作項目。"
       table:
         configure_button: "設定工作項目"
         summary: "由工作項目和工作項目屬性列組成的表格。"
@@ -1080,10 +1074,6 @@ zh-TW:
           manually: "手動"
           warning: "啟動自動排序模式時，將清除先前的設定。"
         columns_help_text: "使用上面的輸入字段向表視圖中添加列。您可以拖放列來將它們重新排序。"
-        upsale:
-          attribute_highlighting: "需要強調某些工作項目嗎？"
-          relation_columns: "需要檢視工作項目清單的關係嗎"
-          check_out_link: "請查閱企業版"
         relation_filters:
           filter_work_packages_by_relation_type: "依關聯類型過濾工作項目"
       tabs:
@@ -1294,9 +1284,7 @@ zh-TW:
       clear: "清除"
       apply: "套用"
       header_description: "從設定的差異點開始，將標示出修改過地方"
-      enterprise_header_description: "從設定的差異點開始，將標示出修改過地方(企業版功能)"
       show_changes_since: "差異起始"
-      baseline_comparison: "比較差異"
       help_description: "差異線參考時區。"
       time_description: "當地時間： %{datetime}"
       time: "時間"

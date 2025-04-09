@@ -381,7 +381,6 @@ RSpec.describe "Datepicker: Finish date field in auto-scheduled mode logic test 
 
     describe "and change finish and non-working days, switching back to automatic (scenario 14b)" do
       it "preserves the finish date" do
-        pending "Enable when #62641 has been fixed"
         datepicker.set_date "2025-04-25"
 
         datepicker.expect_working_days_only(true)

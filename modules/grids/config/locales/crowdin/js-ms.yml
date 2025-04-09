@@ -1,12 +1,13 @@
 ms:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Tambah widget'
       remove: 'Buang widget'
       configure: 'Konfigurasi widget'
-      upsale:
-        text: "Beberapa widget seperti widget graf pakej kerja, hanya tersedia dalam edisi Enterprise."
-        link: 'Edisi Enterprise'
       widgets:
         missing_permission: "Anda tidak mempunyai kebenaran yang diperlukan untuk melihat widget ini."
         custom_text:

@@ -65,6 +65,7 @@ zh-CN:
       metadata:
         dialog: "这是可用的 OpenProject SAML 元数据的 URL。可选使用它来配置您的身份提供商："
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: 将 OpenProject 连接到 SAML 身份提供商
       request_attributes:
         title: '请求的属性'

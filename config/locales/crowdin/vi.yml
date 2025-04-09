@@ -63,9 +63,6 @@ vi:
         main-menu-bg-selected-background: "Menu chính khi được chọn"
         main-menu-bg-hover-background: "Menu khi trỏ chuột"
       custom_colors: "Tùy chỉnh màu sắc"
-      customize: "Tùy chỉnh cài đặt OpenProject của bạn với logo và màu sắc riêng."
-      enterprise_notice: "Như một lời 'Cảm ơn!' đặc biệt cho sự đóng góp tài chính của họ để phát triển OpenProject, tiện ích nhỏ này chỉ có sẵn cho người đăng ký hỗ trợ phiên bản Enterprise."
-      enterprise_more_info: "Lưu ý: logo sử dụng sẽ được công khai truy cập."
       manage_colors: "Chỉnh sửa màu sắc trong select option"
       instructions:
         primary-button-color: "Màu nhấn mạnh mạnh, được sử dụng cho nút quan trọng nhất trên màn hình."
@@ -215,9 +212,6 @@ vi:
     new: "Hành động tùy chỉnh mới"
     edit: "Chỉnh sửa hành động tùy chỉnh %{name}"
     execute: "Thực hiện %{name}"
-    upsale:
-      title: "Hành động tùy chỉnh"
-      description: "Hành động tùy chỉnh là các phím tắt một lần để thực hiện một tập hợp các hành động đã được định trước mà bạn có thể làm cho sẵn có trên các gói công việc nhất định dựa trên trạng thái, vai trò, loại hoặc dự án."
   custom_fields:
     admin:
       custom_field_projects:
@@ -247,8 +241,6 @@ vi:
           zero: no sub-items
           one: 1 sub-item
           other: "%{count} sub-items"
-    upsale:
-      custom_field_format_hierarchy: "Need a hierarchy in your custom fields for work packages?"
     text_add_new_custom_field: >
       Để thêm các trường tùy chỉnh mới vào một dự án, trước tiên bạn cần tạo chúng trước khi có thể thêm vào dự án này.
     is_enabled_globally: "Được bật toàn cầu"
@@ -537,10 +529,6 @@ vi:
         Tất cả các trường hợp của người dùng giả định (ví dụ, làm người giao việc, người chịu trách nhiệm hoặc các giá trị người dùng khác) sẽ được chuyển nhượng cho một tài khoản có tên là "Người dùng đã xóa". Vì dữ liệu của mỗi tài khoản bị xóa được chuyển nhượng cho tài khoản này, nên sẽ không thể phân biệt dữ liệu mà người dùng đã tạo từ dữ liệu của một tài khoản đã xóa khác.
       irreversible: "Hành động này không thể đảo ngược"
       confirmation: "Nhập tên người dùng giả định %{name} để xác nhận việc xóa."
-    upsale:
-      title: Người dùng giả định
-      description: >
-        Người dùng giả định là cách để gán các gói công việc cho người dùng không thuộc dự án của bạn. Chúng có thể hữu ích trong nhiều tình huống; ví dụ, nếu bạn cần theo dõi các nhiệm vụ cho một nguồn lực chưa được đặt tên hoặc chưa có sẵn, hoặc nếu bạn không muốn cấp quyền truy cập cho người đó vào OpenProject nhưng vẫn muốn theo dõi các nhiệm vụ được gán cho họ.
   prioritiies:
     edit:
       priority_color_text: |
@@ -596,8 +584,6 @@ vi:
     edit:
       form_configuration:
         tab: "Mẫu cấu hình"
-      more_info_text_html: >
-        Phiên bản Doanh nghiệp cho phép bạn tùy chỉnh cấu hình biểu mẫu với các tiện ích bổ sung sau: <br> <ul class="%{list_styling_class}"> <li><b>Thêm nhóm thuộc tính mới</b></li> <li><b>Đổi tên nhóm thuộc tính</b></li> <li><b>Thêm bảng các gói công việc liên quan</b></li> </ul>
       projects:
         tab: "Các dự án"
         enabled_projects: "Các dự án được kích hoạt"
@@ -1040,6 +1026,7 @@ vi:
         consented_at: "Đồng ý tại"
       user_preference:
         comments_sorting: "Hiện bình luận"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Viet nam"
         auto_hide_popups: "Tự động ẩn thông báo thành công"
         warn_on_leaving_unsaved: "Cảnh báo tôi khi rời khỏi gói công việc với thay đổi chưa lưu"
@@ -1929,17 +1916,78 @@ vi:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: ltr
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Tiện ích mở rộng doanh nghiệp"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Thông tin thêm"
-      automatic_subject_generation:
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Tùy chỉnh cấu hình mẫu với các tiện ích bổ sung sau:"
-        add_groups: "Thêm 1 nhóm thuộc tính"
-        rename_groups: "Đổi tên nhóm thuộc tính"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Theo dõi hoạt động"
   enumeration_work_package_priorities: "Độ ưu tiên của work package"
   enumeration_reported_project_statuses: "Tình trạng dự án đã báo cáo"
@@ -3203,6 +3251,7 @@ vi:
   notice_successful_delete: "Xóa thành công."
   notice_successful_cancel: "Successful cancellation."
   notice_successful_update: "Cập nhật thành công."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Cập nhật thành công. Các trường tùy chỉnh của các loại đã kích hoạt sẽ tự động được kích hoạt
     trên biểu mẫu gói công việc. <a href="%{url}" target="_blank">Xem thêm</a>.
@@ -3696,8 +3745,6 @@ vi:
         Các tệp còn lại đã được quét. Có %{file_count} tệp trong cách ly. Bạn sẽ được chuyển hướng đến trang cách ly. Sử dụng trang này để xóa hoặc bỏ qua các tệp đã cách ly.
       remaining_rescanned_files: >
         Quét virus đã được kích hoạt thành công. Có %{file_count} tệp đã được tải lên trước đó và vẫn cần được quét. Quá trình này đã được lên lịch chạy nền. Các tệp sẽ vẫn có thể truy cập trong quá trình quét.
-      upsale:
-        description: "Đảm bảo các tệp tải lên trong OpenProject được quét virus trước khi được người dùng khác truy cập."
       actions:
         delete: "Xóa tệp"
         quarantine: "Cách ly tệp"
@@ -3783,6 +3830,9 @@ vi:
       section_holidays_and_closures: "Ngày nghỉ và đóng cửa"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Gạch dưới"
     plain: "Văn bản thuần"
@@ -3818,8 +3868,6 @@ vi:
     Khi sử dụng các trường tùy chỉnh: Hãy nhớ rằng các trường tùy chỉnh cần được kích hoạt theo từng dự án.
   text_custom_field_hint_activate_per_project_and_type: >
     Các trường tùy chỉnh cần được kích hoạt theo loại gói công việc và theo từng dự án.
-  text_wp_status_read_only_html: >
-    Phiên bản Enterprise sẽ thêm các phần bổ sung cho các trường trạng thái của gói công việc: <br> <ul> <li><b>Cho phép đánh dấu gói công việc chỉ đọc cho các trạng thái cụ thể</b></li> </ul>
   text_project_custom_field_html: >
     Phiên bản Enterprise sẽ thêm các phần bổ sung cho các trường tùy chỉnh của dự án: <br> <ul> <li><b>Thêm các trường tùy chỉnh cho dự án vào danh sách Dự án của bạn để tạo cái nhìn tổng quan về danh mục dự án</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4361,27 +4409,3 @@ vi:
     description: "Thêm nhà cung cấp OmniAuth SAML vào OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF Export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

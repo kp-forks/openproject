@@ -6,6 +6,10 @@ lt:
   permission_show_board_views: "Peržiūrėti lentas"
   permission_manage_board_views: "Valdyti lentas"
   project_module_board_view: "Lentos"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Lenta"
     label_boards: "Lentos"
@@ -34,6 +38,3 @@ lt:
         Lenta su automatiniais stulpeliais sub-projektams. Darbų paketo perkėlimas į kitą sąrašą atitinkamai pakeičia (sub-)projektą.
       subtasks: >
         Lenta su automatiniais stulpeliais sub-elementams. Darbų paketo perkėlimas į kitą sąrašą atitinkamai atnaujina tėtį.
-    upsale:
-      teaser_text: 'Ar norite automatizuoti jūsų procesus su Lentomis? Išmaniosios lentos yra Enterprise priedas. Prašome pasikeisti į mokamą planą.'
-      upgrade: 'Užsisakykite dabar'

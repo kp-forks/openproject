@@ -63,9 +63,6 @@ cs:
         main-menu-bg-selected-background: "Hlavní menu při výběru"
         main-menu-bg-hover-background: "Hlavní menu při přejetí myší"
       custom_colors: "Vlastní barvy"
-      customize: "Přizpůsobte si instalaci OpenProject vlastním logem a barvami."
-      enterprise_notice: ""
-      enterprise_more_info: "Poznámka: použité logo bude veřejně přístupné."
       manage_colors: "Upravit možnosti výběru barvy"
       instructions:
         primary-button-color: "Výrazná akcentní barva, která se používá pro nejdůležitější tlačítko na obrazovce."
@@ -215,9 +212,6 @@ cs:
     new: "Nová vlastní akce"
     edit: "Upravit vlastní akci %{name}"
     execute: "Spustit %{name}"
-    upsale:
-      title: "Vlastní akce"
-      description: "Vlastní akce jsou zkratky jedním kliknutím na sadu předem definovaných akcí, které můžete zpřístupnit na základě stavu některých pracovních balíčků. role, typ nebo projekt."
   custom_fields:
     admin:
       custom_field_projects:
@@ -247,8 +241,6 @@ cs:
           zero: žádné dílčí položky
           one: 1 dílčí položka
           other: "%{count} dílčí položky"
-    upsale:
-      custom_field_format_hierarchy: "Potřebujete hierarchii ve vašich vlastních polích pro pracovní balíčky?"
     text_add_new_custom_field: >
       Chcete-li přidat nová vlastní pole do projektu, musíte je nejprve vytvořit, než je budete moci přidat do tohoto projektu.
     is_enabled_globally: "Globálně povoleno"
@@ -558,10 +550,6 @@ cs:
         Všechny výskyty zástupného uživatele (např. jako pověřené nebo odpovědné nebo jiné uživatelské hodnoty) budou přeřazeny na účet nazvaný "Smazaný uživatel". Vzhledem k tomu, že data každého smazaného účtu jsou znovu přiřazena k tomuto účtu, nebude možné rozlišit data, která uživatel vytvořil od dat jiného smazaného účtu.
       irreversible: "Tato akce je nevratná"
       confirmation: "Zadejte název zástupného uživatele %{name} pro potvrzení odstranění."
-    upsale:
-      title: placeholder uživatel
-      description: >
-        Placeholder uživatelé jsou způsob, jak přiřadit pracovní balíčky uživatelům, kteří nejsou součástí vašeho projektu. Mohou být užiteční v řadě scénářů; například, pokud potřebujete sledovat úkoly u zdroje, který ještě nejsou pojmenovány nebo dostupné, nebo pokud nechcete této osobě umožnit přístup k OpenProject ale stále chcete sledovat úkoly, které jim byly přiděleny.
   prioritiies:
     edit:
       priority_color_text: |
@@ -620,8 +608,6 @@ cs:
     edit:
       form_configuration:
         tab: "Konfigurace formuláře"
-      more_info_text_html: >
-        Enterprise Edice umožňuje přizpůsobit konfiguraci formuláře s těmito dalšími funkcemi: <br> <ul class="%{list_styling_class}"> <li><b>Přidat nové skupiny atributů</b></li> <li><b>Přejmenovat skupiny atributů</b></li> </ul>
       projects:
         tab: "Projekty"
         enabled_projects: "Povolit projekty"
@@ -1067,6 +1053,7 @@ cs:
         consented_at: "Souhlas udělen"
       user_preference:
         comments_sorting: "Zobrazit komentáře"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Režim usnadnění"
         auto_hide_popups: "Automaticky skrýt oznámení o úspěchu"
         warn_on_leaving_unsaved: "Upozornit mě při opuštění pracovního balíčku s neuloženými změnami"
@@ -2046,17 +2033,78 @@ cs:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: zleva doprava
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Doplňky Enterprise Edice"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Více informací"
-      automatic_subject_generation:
-        description: "Vytváření automaticky generovaných předmětů pomocí odkazovaných atributů a textu."
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
+        description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Přizpůsobte si konfiguraci formuláře s těmito doplňky:"
-        add_groups: "Přidat nové skupiny atributů"
-        rename_groups: "Přejmenovat skupiny atributů"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Sledování času"
   enumeration_work_package_priorities: "Priority pracovního balíčku"
   enumeration_reported_project_statuses: "Nahlášený stav projektu"
@@ -3322,6 +3370,7 @@ cs:
   notice_successful_delete: "Úspěšné odstranění."
   notice_successful_cancel: "Úspěšné zrušení."
   notice_successful_update: "Úspěšná aktualizace."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Úspěšná aktualizace. Vlastní pole aktivovaných typů jsou automaticky aktivována
     na formuláři pracovního balíčku. <a href="%{url}" target="_blank">Viz více</a>.
@@ -3818,8 +3867,6 @@ cs:
         Zbývající soubory byly zkontrolovány. V karanténě je %{file_count} . Jste přesměrováni na stránku karantény. Tuto stránku použijte k odstranění nebo přepsání souborů v karanténě.
       remaining_rescanned_files: >
         Virus scanning has been enabled successfully. There are %{file_count} that were uploaded previously and still need to be scanned. This process has been scheduled in the background. The files will remain accessible during the scan.
-      upsale:
-        description: "Zajistěte, aby nahrané soubory v OpenProjectu byly před zpřístupněním ostatním uživatelům zkontrolovány na přítomnost virů."
       actions:
         delete: "Smazat soubor"
         quarantine: "Umístění souboru do karantény"
@@ -3905,6 +3952,9 @@ cs:
       section_holidays_and_closures: "Dovolená a uzávěrky"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Zmenšení"
     plain: "Obyčejný text"
@@ -3940,8 +3990,6 @@ cs:
     Při používání vlastních polí: Mějte na paměti, že vlastní pole musí být aktivována také pro každý projekt.
   text_custom_field_hint_activate_per_project_and_type: >
     Vlastní pole je třeba aktivovat podle typu pracovního balíčku a podle projektu.
-  text_wp_status_read_only_html: >
-    vydání Enterprise přidá tyto další doplňky pro pole statusů pracovních balíčků: <br> <ul> <li><b>Povolit označit pracovní balíčky pouze pro čtení pro konkrétní stavy</b></li> </ul>
   text_project_custom_field_html: >
     Enterprise edice přidá tyto další doplňky do vlastních polí projektů: <br> <ul> <li><b>Přidá vlastní pole pro projekty do seznamu projektů a vytvoří tak projektové portfolio</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4489,27 +4537,3 @@ cs:
     description: "Přidá poskytovatele SAML OmniAuth do OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

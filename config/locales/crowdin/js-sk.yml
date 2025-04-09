@@ -631,9 +631,6 @@ sk:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "a"
         and_more_users:
@@ -698,7 +695,6 @@ sk:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Project-specific notification settings"
@@ -1049,8 +1045,6 @@ sk:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Konfigurovať tabuľku pracovného balíčka"
         summary: "Tabuľka s riadkami pracovného balíka a so stĺpcami pracovného balíka atribútov."
@@ -1085,10 +1079,6 @@ sk:
           manually: "Manually"
           warning: "You will lose your previous sorting when activating the automatic sorting mode."
         columns_help_text: "Use the input field above to add columns to your table view. You can drag and drop the columns to reorder them."
-        upsale:
-          attribute_highlighting: "Mali by sa rozlišovať osobitné pracovné balíčky?"
-          relation_columns: "Potrebujete vidieť vzťahy v zozname pracovných balíčkov?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "Filter work packages by relation type"
       tabs:
@@ -1308,9 +1298,7 @@ sk:
       clear: "Vyčistiť"
       apply: "Použiť"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "Čas"

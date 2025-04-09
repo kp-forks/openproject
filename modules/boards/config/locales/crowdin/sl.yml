@@ -6,6 +6,10 @@ sl:
   permission_show_board_views: "Prikaži table"
   permission_manage_board_views: "Upravljaj table"
   project_module_board_view: "Table"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Tabla"
     label_boards: "Table"
@@ -34,6 +38,3 @@ sl:
         Tabla s samodejnimi stolpci za podprojekte. Če premaknete delovne pakete na druge sezname, boste ustrezno posodobili (pod)projekt.
       subtasks: >
         Tabla s samodejnimi stolpci za podelemente. Če premaknete delovne pakete na druge sezname, boste ustrezno posodobili nadrazred.
-    upsale:
-      teaser_text: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
-      upgrade: 'Nadgradi zdaj'

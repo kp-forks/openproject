@@ -94,7 +94,8 @@ export abstract class OpModalComponent extends UntilDestroyedMixin implements On
     this.updateAppHeight();
     this.cdRef.detectChanges();
 
-    window.addEventListener('resize', this.onResize);
+    // It is important to check for visualViewport changes as that includes also keyboard opening (especially on iOS)
+    window.visualViewport?.addEventListener('resize', this.onResize);
     window.addEventListener('orientationchange', this.onResize);
   }
 

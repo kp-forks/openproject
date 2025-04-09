@@ -630,9 +630,6 @@ cs:
         property_is: "je v %{difference_in_days}"
         property_was: "byl před %{difference_in_days}"
         property_is_deleted: "je vymazán."
-        upsale:
-          title: "Upozornění na datum"
-          description: "S upozorněním na datum budete upozorněni na blížící se datum zahájení nebo ukončení, abyste nikdy nezmeškali nebo nezapomněli na důležitou lhůtu."
       center:
         label_actor_and: "a"
         and_more_users:
@@ -697,7 +694,6 @@ cs:
           date_alerts:
             title: "Upozornění na datum"
             description: "Automatická oznámení, pokud se blíží důležitá data pro otevřené pracovní balíčky, které jste zapojeni (přiřazený, zodpovědný nebo sledovaný)."
-            teaser_text: "S upozorněním na datum budete upozorněni na blížící se datum zahájení nebo ukončení, abyste nikdy nezmeškali nebo nezapomněli na důležitou lhůtu."
           overdue: Po termínu
         project_specific:
           title: "Nastavení upozornění pro konkrétní projekt\n"
@@ -1048,8 +1044,6 @@ cs:
       sharing:
         title: "Sdílet pracovní balíček"
         show_all_users: "Zobrazit všechny uživatele, s nimiž byl pracovní balíček sdílen s"
-        upsale:
-          description: "Sdílejte pracovní balíčky s uživateli, kteří nejsou členy projektu."
       table:
         configure_button: "Konfigurovat tabulku pracovních balíčků"
         summary: "Tabulka s řádky pracovního balíčku a atributy sloupců pracovního balíčku."
@@ -1084,10 +1078,6 @@ cs:
           manually: "Ručně"
           warning: "Při aktivaci režimu automatického řazení ztratíte své předchozí řazení."
         columns_help_text: "Toto pole použijte pro přidání nebo odebrání sloupců v tabulkovém zobrazení. Přetažením sloupců myší změníte jejich pořadí v tabulce."
-        upsale:
-          attribute_highlighting: "Potřebujete určité pracovní balíčky, aby vyšly z celkového objemu?"
-          relation_columns: "Potřebujete vidět vztahy v seznamu pracovních balíčků?"
-          check_out_link: "Podívejte se na Enterprise edici."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtrovat pracovní balíčky podle typu vztahu"
       tabs:
@@ -1307,9 +1297,7 @@ cs:
       clear: "Vyčistit"
       apply: "Použít"
       header_description: "Zvýraznit změny provedené v tomto seznamu od té doby v minulosti."
-      enterprise_header_description: "Zvýraznit změny provedené v tomto seznamu od chvíle, kdy v minulosti došlo k vydání Enterprise ."
       show_changes_since: "Zobrazit změny od"
-      baseline_comparison: "Srovnání baseline"
       help_description: "Referenční časové pásmo pro Baseline"
       time_description: "Ve vašem místním čase: %{datetime}"
       time: "Čas"

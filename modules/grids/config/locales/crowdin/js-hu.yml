@@ -1,12 +1,13 @@
 hu:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Widget hozzáadása'
       remove: 'Widget eltávolítása'
       configure: 'Widget konfigurálása'
-      upsale:
-        text: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
-        link: 'Enterprise edition.'
       widgets:
         missing_permission: "Nincs meg a szükséges jogosultsága a widget megtekintéséhez."
         custom_text:

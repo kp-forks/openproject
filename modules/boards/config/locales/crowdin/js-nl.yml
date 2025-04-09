@@ -1,14 +1,15 @@
 #English strings go here
 nl:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Maak een nieuw bord'
       label_unnamed_board: 'Naamloos bord'
       label_unnamed_list: 'Naamloze lijst'
       label_board_type: 'Type bord'
-      upsale:
-        teaser_text: 'Wilt u uw workflows automatiseren met Borden? Geavanceerde borden zijn een Enterprise add-on. Upgrade naar een betaald plan.'
-        upgrade: 'Upgrade nu'
       lists:
         delete: 'Lijst verwijderen'
       version:

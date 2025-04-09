@@ -8,7 +8,7 @@ export function rowId(workPackageId:string):string {
 }
 
 export function relationRowClass():string {
-  return `wp-table--relations-aditional-row`;
+  return 'wp-table--relations-additional-row';
 }
 
 export function locateTableRow(workPackageId:string):JQuery {

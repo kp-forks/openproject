@@ -630,9 +630,6 @@ de:
         property_is: "ist in %{difference_in_days}."
         property_was: "war vor %{difference_in_days}."
         property_is_deleted: "ist gelöscht."
-        upsale:
-          title: "Datums-Erinnerungen"
-          description: "Mit Datums-Erinnerungen werden Sie über bevorstehende Start- oder Endtermine informiert, so dass Sie nie einen wichtigen Termin verpassen oder übersehen."
       center:
         label_actor_and: "und"
         and_more_users:
@@ -695,7 +692,6 @@ de:
           date_alerts:
             title: "Datums-Erinnerungen"
             description: "Automatische Benachrichtigungen, wenn wichtige Termine für offene Arbeitspakete bevorstehen, an denen Sie beteiligt (z. B. zugewiesen, verantwortlich oder Beobachter) sind."
-            teaser_text: "Mit Datums-Erinnerungen werden Sie über bevorstehende Start- oder Endtermine informiert, so dass Sie nie einen wichtigen Termin verpassen oder übersehen."
           overdue: Wenn überfällig
         project_specific:
           title: "Projektspezifische Benachrichtigungseinstellungen"
@@ -1046,8 +1042,6 @@ de:
       sharing:
         title: "Arbeitspaket teilen"
         show_all_users: "Alle Benutzer anzeigen, für die das Arbeitspaket geteilt wurde"
-        upsale:
-          description: "Teilen Sie Arbeitspakete mit Benutzern, die nicht Mitglieder des Projekts sind."
       table:
         configure_button: "Arbeitspaket-Tabelle konfigurieren"
         summary: "Tabelle mit Zeilen von Arbeitspaketen und Spalten von Attributen dieser Arbeitspakete."
@@ -1082,10 +1076,6 @@ de:
           manually: "Manuell"
           warning: "Sie verlieren Ihre vorherige Sortierung beim Aktivieren des automatischen Sortiermodus."
         columns_help_text: "Über das Eingabefeld oben können Sie weitere Spalten zu Ihrer Tabellenansicht hinzuzufügen. Sie können die Spalten durch Ziehen neu anordnen."
-        upsale:
-          attribute_highlighting: "Sollen bestimmte Arbeitspakete aus der Menge herausstechen?"
-          relation_columns: "Möchten Sie Beziehungen als Spalten in der Arbeitspaketliste sehen können?"
-          check_out_link: "Schauen Sie sich die Enterprise edition an."
         relation_filters:
           filter_work_packages_by_relation_type: "Arbeitspakete nach Beziehungs-Typ filtern"
       tabs:
@@ -1299,9 +1289,7 @@ de:
       clear: "Zurücksetzen"
       apply: "Anwenden"
       header_description: "An dieser Liste vorgenommene Änderungen seit einem beliebigen Zeitpunkt in der Vergangenheit hervorheben."
-      enterprise_header_description: "Mit der Enterprise Edition an dieser Liste vorgenommene Änderungen seit einem beliebigen Zeitpunkt in der Vergangenheit hervorheben."
       show_changes_since: "Änderungen anzeigen ab"
-      baseline_comparison: "Baseline-Vergleich"
       help_description: "Referenz-Zeitzone für die Baseline."
       time_description: "In Ihrer Ortszeit: %{datetime}"
       time: "Zeit"

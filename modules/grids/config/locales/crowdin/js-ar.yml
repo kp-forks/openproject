@@ -1,12 +1,13 @@
 ar:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Add widget'
       remove: 'إزالة الأداة'
       configure: 'Configure widget'
-      upsale:
-        text: "بعض الأدوات، مثل أداة الرسم البياني لحزمة العمل، متوفرة فقط في النسخة المدفوعة."
-        link: 'طبعة المؤسسة.'
       widgets:
         missing_permission: "You don't have the necessary permissions to view this widget."
         custom_text:

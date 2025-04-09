@@ -1,14 +1,15 @@
 #English strings go here
 tr:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Yeni pano oluştur'
       label_unnamed_board: 'Adsız tahta'
       label_unnamed_list: 'Adsız liste'
       label_board_type: 'Yazı tahtası tipi'
-      upsale:
-        teaser_text: 'Panolar ile iş akışlarınızı otomatikleştirmek ister misiniz? Gelişmiş kartlar bir Enterprise eklentidir. Lütfen ücretli bir plana yükseltin.'
-        upgrade: 'Şimdi Yükselt'
       lists:
         delete: 'Listeyi silin'
       version:

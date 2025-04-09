@@ -630,9 +630,6 @@ pt-BR:
         property_is: "está em %{difference_in_days}."
         property_was: "há %{difference_in_days}."
         property_is_deleted: "foi excluído."
-        upsale:
-          title: "Alertas de data"
-          description: "Com os alertas de data, você receberá uma notificação das futuras datas de início e conclusão, assim você nunca perderá ou esquecerá prazos importante. "
       center:
         label_actor_and: "e"
         and_more_users:
@@ -695,7 +692,6 @@ pt-BR:
           date_alerts:
             title: "Alertas de data"
             description: "Notificações automáticas quando datas importantes estiverem se aproximando para pacotes de trabalho abertos que você esteja envolvido (cessionário, responsável ou observador)."
-            teaser_text: "Com os alertas de data, você receberá uma notificação das futuras datas de início e conclusão, assim você nunca perderá ou esquecerá prazos importante. "
           overdue: Quando vencido
         project_specific:
           title: "Configurações de notificação específicas de projetos"
@@ -1046,8 +1042,6 @@ pt-BR:
       sharing:
         title: "Compartilhar pacote de trabalho"
         show_all_users: "Exibir todos os usuários com quem o pacote de trabalho foi compartilhado"
-        upsale:
-          description: "Compartilhe pacotes de trabalho com usuários que não são membros do projeto."
       table:
         configure_button: "Configurar a tabela de pacote de trabalho"
         summary: "Tabela com linhas de pacote de trabalho e colunas com atributos do pacote de trabalho."
@@ -1082,10 +1076,6 @@ pt-BR:
           manually: "Manualmente"
           warning: "Você perderá sua ordenação anterior quando ativar o modo de ordenação automática."
         columns_help_text: "Utilize o campo de entrada acima para adicionar colunas à sua visualização de tabela. Você pode arrastar e soltar as colunas para reorganizá-las."
-        upsale:
-          attribute_highlighting: "Precisa de certos pacotes de trabalho para se destacar da massa?"
-          relation_columns: "Precisa ver as relações na lista de pacotes de trabalho?"
-          check_out_link: "Confira a edição Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtrar pacotes de trabalho por tipo de relação"
       tabs:
@@ -1299,9 +1289,7 @@ pt-BR:
       clear: "Remover"
       apply: "Aplicar"
       header_description: "Destaque as alterações realizadas nesta lista desde qualquer ponto no passado."
-      enterprise_header_description: "Destaque as alterações realizadas nesta lista desde qualquer ponto no passado com a edição Enterprise."
       show_changes_since: "Exibir alterações desde"
-      baseline_comparison: "Comparação de linha base"
       help_description: "Fuso horário de referência para a linha base."
       time_description: "Em seu horário local: %{datetime}"
       time: "Hora"

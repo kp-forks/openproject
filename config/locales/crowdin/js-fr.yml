@@ -631,9 +631,6 @@ fr:
         property_is: "a lieu dans %{difference_in_days}."
         property_was: "avait lieu il y a %{difference_in_days}."
         property_is_deleted: "a été supprimée."
-        upsale:
-          title: "Alarmes"
-          description: "Avec les alarmes, vous serez informé(e) à l'approche des dates de début ou de fin vous concernant afin de ne jamais manquer ou oublier une échéance importante."
       center:
         label_actor_and: "et"
         and_more_users:
@@ -696,7 +693,6 @@ fr:
           date_alerts:
             title: "Alarmes"
             description: "Notifications automatiques lorsque des dates importantes approchent pour les lots de travaux ouverts vous concernant (assigné, responsable ou observateur)."
-            teaser_text: "Avec les alarmes, vous serez informé(e) à l'approche des dates de début ou de fin vous concernant afin de ne jamais manquer ou oublier une échéance importante."
           overdue: En cas de retard
         project_specific:
           title: "Paramètres de notification spécifiques au projet"
@@ -1047,8 +1043,6 @@ fr:
       sharing:
         title: "Partager le lot de travaux"
         show_all_users: "Afficher tous les utilisateurs avec lesquels le lot de travaux a été partagé"
-        upsale:
-          description: "Partagez les lots de travaux avec des utilisateurs qui ne sont pas membres du projet."
       table:
         configure_button: "Configurer le tableau du lot de travaux"
         summary: "Tableau avec lignes de lots de travaux et colonnes d’attributs de lots de travaux."
@@ -1083,10 +1077,6 @@ fr:
           manually: "Manuellement"
           warning: "Vous perdrez votre tri précédent lors de l'activation du mode de tri automatique."
         columns_help_text: "Utilisez le champ de saisie ci-dessus pour ajouter des colonnes à votre vue de tableau. Vous pouvez glisser-déposer les colonnes pour les réorganiser."
-        upsale:
-          attribute_highlighting: "Vous avez besoin de lots de travaux qui sortent du lot ?"
-          relation_columns: "Besoin de voir les relations sur la liste des lots de travaux ?"
-          check_out_link: "Découvrez l’édition Entreprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtrer les lots de travaux par type de relation"
       tabs:
@@ -1300,9 +1290,7 @@ fr:
       clear: "Effacer"
       apply: "Appliquer"
       header_description: "Mettre en évidence les modifications apportées à cette liste depuis n'importe quel point dans le passé."
-      enterprise_header_description: "Mettre en évidence les modifications apportées à cette liste depuis n'importe quel point dans le passé avec la version Enterprise."
       show_changes_since: "Afficher les modifications depuis"
-      baseline_comparison: "Comparaison de Référence"
       help_description: "Fuseau horaire de référence pour la Référence."
       time_description: "Dans votre fuseau horaire : %{datetime}"
       time: "Heure"

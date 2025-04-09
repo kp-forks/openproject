@@ -1,14 +1,15 @@
 #English strings go here
 ca:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Crea un tauler nou'
       label_unnamed_board: 'Taulell sense nom'
       label_unnamed_list: 'Llista sense nom'
       label_board_type: 'Tipus de taulell'
-      upsale:
-        teaser_text: 'T''agradaria automatitzar els teus processos de treball amb taulells? Els taulells avançats són una extensió de l''edició Enterprise. Si us plau, actualitza a un pla de pagament.'
-        upgrade: 'Actualitzeu ara'
       lists:
         delete: 'Suprimeix la llista'
       version:

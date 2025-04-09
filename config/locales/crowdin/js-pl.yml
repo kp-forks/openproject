@@ -631,9 +631,6 @@ pl:
         property_is: "jest za %{difference_in_days}."
         property_was: "była %{difference_in_days} temu."
         property_is_deleted: "została usunięta."
-        upsale:
-          title: "Alerty dotyczące dat"
-          description: "Dzięki alertom dotyczącym dat będziesz otrzymywać powiadomienia o zbliżających się terminach rozpoczęcia lub zakończenia pracy, dzięki czemu nigdy nie przegapisz ani nie zapomnisz ważnego terminu."
       center:
         label_actor_and: "i"
         and_more_users:
@@ -698,7 +695,6 @@ pl:
           date_alerts:
             title: "Data ostrzeżeń"
             description: "Automatyczne powiadomienia, gdy zbliżają się ważne daty otwartych pakietów roboczych, do których Cię zaangażowano (jako osobę: przypisaną, odpowiedzialną lub obserwatora)"
-            teaser_text: "Dzięki alertom dotyczącym dat będziesz otrzymywać powiadomienia o zbliżających się terminach rozpoczęcia lub zakończenia pracy, dzięki czemu nigdy nie przegapisz ani nie zapomnisz ważnego terminu."
           overdue: Po upływie terminu
         project_specific:
           title: "Ustawienia powiadomień dla danego projektu"
@@ -1049,8 +1045,6 @@ pl:
       sharing:
         title: "Udostępnij pakiet roboczy"
         show_all_users: "Pokaż wszystkich użytkowników, którym udostępniono pakiet roboczy"
-        upsale:
-          description: "Udostępnij pakiety robocze użytkownikom, którzy nie są członkami projektu."
       table:
         configure_button: "Konfiguruj tabelę pakietów roboczych"
         summary: "Tabela, której wiersze zawierają pakiety pracy, a kolumny ich atrybuty."
@@ -1085,10 +1079,6 @@ pl:
           manually: "Ręcznie"
           warning: "Wskutek aktywacji trybu automatycznego sortowania utracisz poprzednie sortowanie."
         columns_help_text: "Użyj powyższego pola wprowadzania danych, aby dodać kolumny do widoku tabeli. Możesz przeciągać i upuszczać kolumny, aby zmienić ich kolejność."
-        upsale:
-          attribute_highlighting: "Czy określone pakiety robocze trzeba wyróżnić?"
-          relation_columns: "Chcesz zobaczyć relacje w tej liście pakietów roboczych?"
-          check_out_link: "Sprawdź wersję Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtruj pakiety robocze według typu relacji"
       tabs:
@@ -1308,9 +1298,7 @@ pl:
       clear: "Wyczyść"
       apply: "Zastosuj"
       header_description: "Wyróżnij zmiany wprowadzone na tej liście od dowolnego momentu w przeszłości."
-      enterprise_header_description: "Wyróżnij zmiany wprowadzone na tej liście w wersji Enterprise Edition od dowolnego momentu w przeszłości."
       show_changes_since: "Pokaż zmiany od"
-      baseline_comparison: "Porównanie linii odniesienia"
       help_description: "Referencyjna strefa czasowa linii odniesienia."
       time_description: "W Twoim czasie lokalnym: %{datetime}"
       time: "Czas"

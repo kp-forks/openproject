@@ -6,12 +6,16 @@ ka:
   permission_view_team_planner: "გუნდის მგეგმავის ნახვა"
   permission_manage_team_planner: "გუნდის მგეგმავის მართვა"
   project_module_team_planner_view: "გუნდის მგეგმავები"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "გუნდის მგეგმავი"
     label_new_team_planner: "ახალი გუნდის მგეგმავი"
     label_create_new_team_planner: "ახალი გუნდის მგეგმავის შექმნა"
     label_team_planner_plural: "გუნდის მგეგმავები"
     label_assignees: "მიმნიჭებლები"
-    upsale:
-      title: "გუნდის მგეგმავი"
-      description: "მიიღეთ მთელი თქვენი გუნდის გეგმების მიმოხილვა მგეგმავთან ერთად. გაწელეთ, შეამოკლეთ და გადაათრიეთ სამუშაოს პაკეტები, მათი თარიღების შესაცვლელად, გადასაადგილებლად ან მიმნიჭებლის შესაცვლელად."

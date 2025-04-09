@@ -1,14 +1,15 @@
 #English strings go here
 ko:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: '새 보드 만들기'
       label_unnamed_board: '명명되지 않은 보드'
       label_unnamed_list: '명명되지 않은 목록'
       label_board_type: '보드 유형'
-      upsale:
-        teaser_text: '보드에서 작업 흐름을 자동화하길 원하시나요? 고급 보드는 기업용 기능입니다. 유료 플랜으로 업그레이드하세요.'
-        upgrade: '지금 업그레이드'
       lists:
         delete: '목록 삭제'
       version:

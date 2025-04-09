@@ -1,14 +1,15 @@
 #English strings go here
 vi:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Tạo bảng mới'
       label_unnamed_board: 'Bảng không tên'
       label_unnamed_list: 'Danh sách không tên'
       label_board_type: 'Kiểu bảng'
-      upsale:
-        teaser_text: 'Bạn có muốn tự động hóa quy trình làm việc của mình với các bảng không? Các bảng nâng cao là một tiện ích bổ sung Enterprise. Vui lòng nâng cấp lên gói trả phí.'
-        upgrade: 'Nâng cấp ngay'
       lists:
         delete: 'Xoá danh sách'
       version:

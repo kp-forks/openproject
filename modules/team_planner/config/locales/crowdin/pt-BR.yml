@@ -6,12 +6,16 @@ pt-BR:
   permission_view_team_planner: "Visualizar planejador de equipe"
   permission_manage_team_planner: "Gerenciar planejador de equipe"
   project_module_team_planner_view: "Planejador de equipe"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Planejador de equipe"
     label_new_team_planner: "Novo planejador de equipe"
     label_create_new_team_planner: "Criar novo planejador de equipe"
     label_team_planner_plural: "Planejador de equipe"
     label_assignees: "Atribuídos para"
-    upsale:
-      title: "Planejador de equipe"
-      description: "Obtenha uma visão geral completa do planejamento da sua equipe com o Planejamento de equipe. Estique, encurte, e arraste e solte pacotes de trabalho para modificar datas, movê-los ou alterar os responsáveis."

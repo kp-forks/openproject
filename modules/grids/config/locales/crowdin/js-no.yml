@@ -1,12 +1,13 @@
 "no":
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Legg til widget'
       remove: 'Fjern widget'
       configure: 'Konfigurer widget'
-      upsale:
-        text: "Noen widgeter, som arbeidspakke-diagram-modulen, er bare tilgjengelig i Enterprise versjonen."
-        link: 'Enterprise edition.'
       widgets:
         missing_permission: "Du har ikke nødvendige tillatelser til å se denne widgeten."
         custom_text:

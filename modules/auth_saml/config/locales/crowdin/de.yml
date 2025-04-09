@@ -65,6 +65,7 @@ de:
       metadata:
         dialog: "Dies ist die URL, unter der die OpenProject SAML-Metadaten verfügbar sind. Sie können sie auch verwenden, um Ihren Identitätsanbieter zu konfigurieren:"
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: OpenProject mit einem SAML-Identitätsanbieter verbinden
       request_attributes:
         title: 'Angeforderte Attribute'

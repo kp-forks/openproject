@@ -1,4 +1,9 @@
 ko:
+  ee:
+    upsale:
+      ldap_groups:
+        title: 'LDAP group synchronization'
+        description: 'Synchronize LDAP groups with OpenProject groups to manage users, change their permissions and facilitate user management across groups.'
   plugin_openproject_ldap_groups:
     name: "OpenProject LDAP 그룹"
     description: "LDAP 그룹 멤버십 동기화."

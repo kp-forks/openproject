@@ -630,9 +630,6 @@ sv:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "och"
         and_more_users:
@@ -695,7 +692,6 @@ sv:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Project-specific notification settings"
@@ -1046,8 +1042,6 @@ sv:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Konfigurera arbetspakets-tabell"
         summary: "Tabell med ett arbetspaket för varje rad och kolumner för varje arbetspaketsattribut."
@@ -1082,10 +1076,6 @@ sv:
           manually: "Manuellt"
           warning: "Du förlorar din tidigare sortering när du aktiverar det automatiska sorteringsläget."
         columns_help_text: "Use the input field above to add columns to your table view. You can drag and drop the columns to reorder them."
-        upsale:
-          attribute_highlighting: "Behöver vissa arbetspaket sticka ut från massan?"
-          relation_columns: "Behöver du se relationer i listan på arbetspaket?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "Filter work packages by relation type"
       tabs:
@@ -1299,9 +1289,7 @@ sv:
       clear: "Rensa"
       apply: "Tilldela"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "Tid"

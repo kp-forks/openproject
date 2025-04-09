@@ -630,9 +630,6 @@ zh-CN:
         property_is: "%{difference_in_days}后。"
         property_was: "%{difference_in_days}前。"
         property_is_deleted: "已删除。"
-        upsale:
-          title: "日期提醒"
-          description: "借助日期提醒，您将收到即将到来的开始或结束日期的通知，以免错过或忘记重要截止日期。"
       center:
         label_actor_and: "和"
         and_more_users:
@@ -694,7 +691,6 @@ zh-CN:
           date_alerts:
             title: "日期提醒"
             description: "当你参与的开放工作包（作为受理人、负责人或关注者）的重要日期临近时，自动发送通知。"
-            teaser_text: "借助日期提醒，您将收到即将到来的开始或结束日期的通知，以免错过或忘记重要截止日期。"
           overdue: 逾期时
         project_specific:
           title: "项目特定通知设置"
@@ -1045,8 +1041,6 @@ zh-CN:
       sharing:
         title: "共享工作包"
         show_all_users: "显示与之共享工作包的所有用户"
-        upsale:
-          description: "与非此项目成员的用户共享工作包。"
       table:
         configure_button: "配置工作包表"
         summary: "行为工作包且列为工作包属性的表格。"
@@ -1081,10 +1075,6 @@ zh-CN:
           manually: "手动"
           warning: "激活自动排序模式时，您将丢失以前的排序结果。"
         columns_help_text: "使用上面的输入字段向表视图中添加列。您可以拖放列来将它们重新排序。"
-        upsale:
-          attribute_highlighting: "需要特定的工作包以脱颖而出？"
-          relation_columns: "需要查看工作包列表中的关系吗？"
-          check_out_link: "退出企业版。"
         relation_filters:
           filter_work_packages_by_relation_type: "按关系类型筛选工作包"
       tabs:
@@ -1295,9 +1285,7 @@ zh-CN:
       clear: "清除"
       apply: "应用"
       header_description: "高亮显示过去对该清单所作的修改。"
-      enterprise_header_description: "高亮显示过去企业版对该清单所作的修改。"
       show_changes_since: "显示更改自"
-      baseline_comparison: "基线比较"
       help_description: "基准参考时区。"
       time_description: "在您的本地时间: %{datetime}"
       time: "时间"

@@ -6,6 +6,10 @@ fi:
   permission_show_board_views: "Näytä taulut"
   permission_manage_board_views: "Hallitse tauluja"
   project_module_board_view: "Taulut"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Taulu"
     label_boards: "Taulut"
@@ -34,6 +38,3 @@ fi:
         Board with automated columns for subprojects. Dragging work packages to other lists updates the (sub-)project accordingly.
       subtasks: >
         Board with automated columns for sub-elements. Dragging work packages to other lists updates the parent accordingly.
-    upsale:
-      teaser_text: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
-      upgrade: 'Päivitä nyt'

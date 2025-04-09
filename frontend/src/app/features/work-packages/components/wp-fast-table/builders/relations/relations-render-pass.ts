@@ -117,7 +117,7 @@ export class RelationsRenderPass {
       `.${this.relationRowBuilder.classIdentifier(from)},.${relationGroupClass(from.id as string)}`,
       {
         classIdentifier: this.relationRowBuilder.relationClassIdentifier(from, to),
-        additionalClasses: row.additionalClasses.concat(['wp-table--relations-aditional-row']),
+        additionalClasses: row.additionalClasses.concat(['wp-table--relations-additional-row']),
         workPackage: to,
         belongsTo: from,
         renderType: this.renderType,

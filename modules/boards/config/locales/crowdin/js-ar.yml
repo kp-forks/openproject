@@ -1,14 +1,15 @@
 #English strings go here
 ar:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Create new board'
       label_unnamed_board: 'لوحة غير مسماة'
       label_unnamed_list: 'قائمة غير مسماة'
       label_board_type: 'نوع اللوحة'
-      upsale:
-        teaser_text: 'هل ترغب في أتمتة سير العمل الخاص بك باستخدام اللوحات؟ اللوحات المتقدمة هي إضافة خاصة بالمؤسسات. يرجى الترقية إلى خطة مدفوعة.'
-        upgrade: 'الترقية الآن'
       lists:
         delete: 'حذف القائمة'
       version:

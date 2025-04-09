@@ -65,6 +65,7 @@ ko:
       metadata:
         dialog: "OpenProject SAML 메타데이터를 사용할 수 있는 URL입니다. 선택적으로 이 URL을 사용하여 ID 공급자를 구성합니다:"
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: SAML ID 공급자에 OpenProject 연결
       request_attributes:
         title: '요청된 특성'

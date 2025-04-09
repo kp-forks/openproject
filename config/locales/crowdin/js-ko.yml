@@ -631,9 +631,6 @@ ko:
         property_is: "- %{difference_in_days} 이내입니다."
         property_was: "- %{difference_in_days} 전이었습니다."
         property_is_deleted: "- 삭제되었습니다."
-        upsale:
-          title: "날짜 경보"
-          description: "날짜 경보를 사용하면, 중요 마감일을 놓치거나 잊지 않도록 향후 시작 날짜 또는 종료 날짜에 대한 알림을 받게 됩니다."
       center:
         label_actor_and: "및"
         and_more_users:
@@ -695,7 +692,6 @@ ko:
           date_alerts:
             title: "날짜 경보"
             description: "귀하가 참여하고 있는 오픈 작업 패키지에 대한 중요 날짜가 다가올 때 자동 알림(담당자, 책임자 또는 주시자)."
-            teaser_text: "날짜 경보를 사용하면, 중요 마감일을 놓치거나 잊지 않도록 향후 시작 날짜 또는 종료 날짜에 대한 알림을 받게 됩니다."
           overdue: 기한이 지난 경우
         project_specific:
           title: "프로젝트별 알림 설정"
@@ -1046,8 +1042,6 @@ ko:
       sharing:
         title: "작업 패키지 공유"
         show_all_users: "작업 패키지가 공유된 모든 사용자 표시"
-        upsale:
-          description: "프로젝트 멤버가 아닌 사용자와 작업 패키지를 공유합니다."
       table:
         configure_button: "작업 패키지 테이블 구성"
         summary: "작업 패키지의 행 및 작업 패키지 특성의 열이 있는 테이블."
@@ -1082,10 +1076,6 @@ ko:
           manually: "수동"
           warning: "자동 정렬 모드를 활성화하면 이전 정렬이 손실됩니다."
         columns_help_text: "위 입력 필드를 사용하여 테이블 보기에 열을 추가하세요. 열을 끌어다 놓아 순서를 바꿀 수 있습니다."
-        upsale:
-          attribute_highlighting: "나머지 작업 중에 확연히 두드러지는 특정 작업 패키지가 필요합니까?"
-          relation_columns: "작업 패키지 목록에서 관계를 표시해야 합니까?"
-          check_out_link: "Enterprise Edition을 체크아웃하세요."
         relation_filters:
           filter_work_packages_by_relation_type: "관계 유형별 작업 패키지 필터링"
       tabs:
@@ -1296,9 +1286,7 @@ ko:
       clear: "선택 취소"
       apply: "적용"
       header_description: "과거 어느 시점 이후에 이 목록에서 변경된 사항을 강조 표시합니다."
-      enterprise_header_description: "Enterprise Edition에서 과거 어느 시점 이후에 이 목록에서 변경된 사항을 강조 표시합니다."
       show_changes_since: "다음 이후 변경 사항 표시"
-      baseline_comparison: "기준선 비교"
       help_description: "기준선의 참조 시간대입니다."
       time_description: "내 현지 시간: %{datetime}"
       time: "시간"

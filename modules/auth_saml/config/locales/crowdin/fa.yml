@@ -65,6 +65,7 @@ fa:
       metadata:
         dialog: "این نشانی اینترنتی است که فراداده SAML OpenProject در آن موجود است. به صورت اختیاری از آن برای پیکربندی ارائه دهنده هویت خود استفاده کنید:"
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: OpenProject را به یک ارائه دهنده هویت SAML متصل کنید
       request_attributes:
         title: 'ویژگی های درخواستی'

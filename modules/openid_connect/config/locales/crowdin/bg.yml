@@ -92,6 +92,7 @@ bg:
       custom:
         name: Custom
       upsale:
+        title: "Single Sign-On (SSO) with OpenID connect"
         description: Connect OpenProject to an OpenID connect identity provider
       label_add_new: Добавяне на нов OpenID доставчик
       label_edit: Редактиране на OpenID доставчика  %{name}

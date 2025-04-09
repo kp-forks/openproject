@@ -631,9 +631,6 @@
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Dato varsler"
-          description: "Med datovarsler, vil du bli varslet om kommende start- eller sluttdatoer slik at du aldri går glipp av eller glemmer en viktig frist."
       center:
         label_actor_and: "og"
         and_more_users:
@@ -696,7 +693,6 @@
           date_alerts:
             title: "Dato varsler"
             description: "Automatiske varsler når viktige datoer nærmer seg for åpne arbeidspakker du er med i (utførende, ansvarlig eller overvåker)."
-            teaser_text: "Med datovarsler, vil du bli varslet om kommende start- eller sluttdatoer slik at du aldri går glipp av eller glemmer en viktig frist."
           overdue: Når forfalt
         project_specific:
           title: "Prosjekt-spesifikke varslingsinnstillinger"
@@ -1047,8 +1043,6 @@
       sharing:
         title: "Del arbeidspakke"
         show_all_users: "Vis alle brukere som arbeidspakken er delt med"
-        upsale:
-          description: "Del arbeidspakker med brukere som ikke er medlemmer i prosjektet."
       table:
         configure_button: "Konfigurer tabell for arbeidspakke"
         summary: "Tabell med rader for arbeidspakke og kolonner for arbeidspakkeegenskaper."
@@ -1083,10 +1077,6 @@
           manually: "Manuelt"
           warning: "Du vil miste din forrige sortering når du aktiverer automatiske sorteringsmodus."
         columns_help_text: "Bruk inndatafelt over for å legge til kolonner til din tabellvisning. Du kan dra og slippe kolonnene for å endre rekkefølgen for dem."
-        upsale:
-          attribute_highlighting: "Trenger du visse arbeidspakker som skiller seg ut fra massen?"
-          relation_columns: "Trenger du å se relasjoner i listen over arbeidspakke?"
-          check_out_link: "Sjekk ut Enterprise-utgaven."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtrer arbeidspakker etter relasjonstype"
       tabs:
@@ -1300,9 +1290,7 @@
       clear: "Nullstill"
       apply: "Bruk"
       header_description: "Marker endringer som er gjort på denne listen tidligere."
-      enterprise_header_description: "Marker endringer på denne listen tidligere med Enterprise Edition."
       show_changes_since: "Vis endringer siden"
-      baseline_comparison: "Sammenligning grunnlinje"
       help_description: "Referansetidssone for grunnlinjen."
       time_description: "I din lokale tid: %{datetime}"
       time: "Tidspunkt"

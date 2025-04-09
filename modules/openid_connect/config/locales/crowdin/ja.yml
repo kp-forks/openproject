@@ -92,6 +92,7 @@ ja:
       custom:
         name: Custom
       upsale:
+        title: "Single Sign-On (SSO) with OpenID connect"
         description: Connect OpenProject to an OpenID connect identity provider
       label_add_new: 新しい OpenID プロバイダーを追加
       label_edit: OpenID プロバイダー %{name} を編集

@@ -631,9 +631,6 @@ hu:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "és"
         and_more_users:
@@ -696,7 +693,6 @@ hu:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Projekt-specifikus értesítések beállításai"
@@ -1047,8 +1043,6 @@ hu:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Feladatcsoport táblázat beállítása"
         summary: "Táblázat melynek sorai munkacsomagok és oszlopai munkacsomag attribútumok."
@@ -1083,10 +1077,6 @@ hu:
           manually: "Kézi"
           warning: "Az automatikus válogatás üzemmód aktiválásakor elveszíti korábbi rendezését."
         columns_help_text: "A fenti bevitellel oszlopokat adhat hozzá a táblázatnézethez. A \"Húzd és Dobd\" módszerrel újra rendezheti az oszlopokat"
-        upsale:
-          attribute_highlighting: "Szüksége van bizonyos munkacsomagokra, hogy kitűnjön a tömegből?"
-          relation_columns: "Szeretné látni a munkacsomag kapcsolatait?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "A munkacsomagok szűrése relációs típus szerint"
       tabs:
@@ -1300,9 +1290,7 @@ hu:
       clear: "Törlés"
       apply: "Alkalmaz"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "Idő"

@@ -631,9 +631,6 @@ ca:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Alertes per dates"
-          description: "Amb les alertes per dates, se't notificarà quan una data d'inici o finalització s'apropi de tal manera que no se't puguin oblidar o passar dates rellevants."
       center:
         label_actor_and: "i"
         and_more_users:
@@ -696,7 +693,6 @@ ca:
           date_alerts:
             title: "Alertes per dates"
             description: "Notificacions automàtiques quan dates importants s'aproximen per a paquets de treball oberts en els quals estàs involucrat (assignat, responsable o observador)."
-            teaser_text: "Amb les alertes per dates, se't notificarà quan una data d'inici o finalització s'apropi de tal manera que no se't puguin oblidar o passar dates rellevants."
           overdue: Quan vençut
         project_specific:
           title: "Configuracions de notificacions específiques del projecte"
@@ -1047,8 +1043,6 @@ ca:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Configura la taula de paquets de treball"
         summary: "Taula amb fileres de paquets de treball i columnes amb els atributs dels paquets de treball."
@@ -1083,10 +1077,6 @@ ca:
           manually: "Manual"
           warning: "Perdràs l'ordenació anterior en activar el mode d'ordenació automàtic."
         columns_help_text: "Utilitza aquest camp d'entrada per afegir columnes a la teva vista de taula. Pots arrossegar les columnes per reordenar-les."
-        upsale:
-          attribute_highlighting: "Necessites ressaltar alguns paquets de treball per sobre de la resta?"
-          relation_columns: "Necessites veure les relacions en una llista de paquets de treball?"
-          check_out_link: "Fes una ullada a l'edició Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtra paquets de treball per classe de relació"
       tabs:
@@ -1300,9 +1290,7 @@ ca:
       clear: "Esborra"
       apply: "Aplica"
       header_description: "Destaca canvis efectuats en aquesta llista des de qualsevol punt del passat."
-      enterprise_header_description: "Destaca canvis efectuats en aquesta llista des de qualsevol punt del passat amb l'edició Enterprise."
       show_changes_since: "Mostra canvis des de"
-      baseline_comparison: "Comparació en base de referència"
       help_description: "Zona de temporal de referència per aquesta base de referència."
       time_description: "En el temps local: %{datetime}"
       time: "Hora"

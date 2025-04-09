@@ -1,14 +1,15 @@
 #English strings go here
 fa:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'ایجاد تابلوی‌ اعلانات'
       label_unnamed_board: 'انجمن بدون نام'
       label_unnamed_list: 'Unnamed list'
       label_board_type: 'نوع انجمن'
-      upsale:
-        teaser_text: 'آیا می خواهید گردش کار خود را با تابلوها خودکار کنید؟ بردهای پیشرفته یک افزونه Enterprise هستند. لطفاً به یک طرح پولی ارتقا دهید.'
-        upgrade: 'هم اکنون ارتقا داده شود'
       lists:
         delete: 'حذف لیست'
       version:

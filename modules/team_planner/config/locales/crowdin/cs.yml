@@ -6,12 +6,16 @@ cs:
   permission_view_team_planner: "Zobrazit plánovač týmu"
   permission_manage_team_planner: "Spravovat plánovač týmu"
   project_module_team_planner_view: "Týmové plánovače"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Týmový plánovač"
     label_new_team_planner: "Nový plánovač týmu"
     label_create_new_team_planner: "Vytvořit nový týmový plánovač"
     label_team_planner_plural: "Týmové plánovače"
     label_assignees: "Řešitelé"
-    upsale:
-      title: "Týmový plánovač"
-      description: "Získejte kompletní přehled plánování týmu s týmovým plánovačem. Roztáhněte, zkrátte a přetáhněte pracovní balíčky pro úpravu datumů, přesuňte je nebo změňte řešitele."

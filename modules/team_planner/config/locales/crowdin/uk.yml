@@ -6,12 +6,16 @@ uk:
   permission_view_team_planner: "Перегляд командного планувальника"
   permission_manage_team_planner: "Керування командним планувальником"
   project_module_team_planner_view: "Командні планувальники"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Командний планувальник"
     label_new_team_planner: "Новий командний планувальник"
     label_create_new_team_planner: "Створити новий командний планувальник"
     label_team_planner_plural: "Командні планувальники"
     label_assignees: "Виконавці"
-    upsale:
-      title: "Командний планувальник"
-      description: "Командний планувальник надає повний огляд планування вашої команди. Розтягуйте, скорочуйте та перетягуйте пакети робіт, щоб переміщувати їх, змінювати дати або перепризначати виконавців."

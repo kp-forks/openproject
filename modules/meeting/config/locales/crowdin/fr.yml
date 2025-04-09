@@ -401,7 +401,7 @@ fr:
   label_meeting_state_in_progress: "En cours"
   label_meeting_reopen_action: "Réouvrir la réunion"
   label_meeting_close_action: "Clôturer la réunion"
-  label_meeting_in_progress_action: "Start meeting"
+  label_meeting_in_progress_action: "Démarrer la réunion"
   text_meeting_open_description: "Cette réunion est ouverte. Vous pouvez ajouter/supprimer des éléments de l'ordre du jour et les modifier comme vous le souhaitez. Une fois l'ordre du jour prêt, marquez-le comme étant en cours pour documenter les résultats."
   text_meeting_closed_description: "Cette réunion est clôturée. Vous ne pouvez plus ajouter/supprimer des points de l'ordre du jour."
   text_meeting_in_progress_description: "Cette réunion est en cours. Vous pouvez documenter les résultats pour chaque élément de l'ordre du jour, les réorganiser et même en ajouter de nouveaux. Une fois la réunion terminée, vous pouvez la marquer comme fermée pour la verrouiller."

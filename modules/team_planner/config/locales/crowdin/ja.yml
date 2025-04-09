@@ -6,12 +6,16 @@ ja:
   permission_view_team_planner: "チームプランナーを表示"
   permission_manage_team_planner: "チームプランナーの管理"
   project_module_team_planner_view: "チーム プランナー"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "チーム プランナー"
     label_new_team_planner: "新しいチームプランナー"
     label_create_new_team_planner: "新しいチームプランナーを作成"
     label_team_planner_plural: "チーム プランナー"
     label_assignees: "担当者"
-    upsale:
-      title: "チーム プランナー"
-      description: "Team Plannerでチームの計画の概要を把握しましょう。クリックやドラッグで作業項目を編集したり、日付を変更したり、担当者を変更したりできます。"

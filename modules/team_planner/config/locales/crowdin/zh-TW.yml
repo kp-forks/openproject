@@ -6,12 +6,16 @@ zh-TW:
   permission_view_team_planner: "查看團隊規劃"
   permission_manage_team_planner: "管理「團隊規劃」"
   project_module_team_planner_view: "查看團隊規劃"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "團隊規劃"
     label_new_team_planner: "新團隊規劃"
     label_create_new_team_planner: "建立新的團隊規劃"
     label_team_planner_plural: "團隊規劃"
     label_assignees: "執行者"
-    upsale:
-      title: "團隊規劃"
-      description: "使用「團隊規劃」全面閱覽了解您的小組工作內容。 縮放、拖曳工作項目以便調整日期、移動日期或更改執行者。"

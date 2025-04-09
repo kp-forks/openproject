@@ -1,14 +1,15 @@
 #English strings go here
 lt:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Kurti naują lentą'
       label_unnamed_board: 'Bevardė lenta'
       label_unnamed_list: 'Bevardis sąrašas'
       label_board_type: 'Lentos tipas'
-      upsale:
-        teaser_text: 'Ar norite automatizuoti jūsų procesus su Lentomis? Išmaniosios lentos yra Enterprise priedas. Prašome pasikeisti į mokamą planą.'
-        upgrade: 'Užsisakykite dabar'
       lists:
         delete: 'Pašalinti sąrašą'
       version:

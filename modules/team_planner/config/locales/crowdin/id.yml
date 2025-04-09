@@ -6,12 +6,16 @@ id:
   permission_view_team_planner: "Lihat rencana tim"
   permission_manage_team_planner: "Kelola rencana tim"
   project_module_team_planner_view: "Rencana tim"
+  ee:
+    feature_names:
+      team_planner_view: "Team planner"
+    upsale:
+      team_planner_view:
+        title: "Team planner"
+        description: "Get a complete overview of your team’s planning with Team Planner. Stretch, shorten and drag-and-drop work packages to modify dates, move them or change assignees."
   team_planner:
     label_team_planner: "Rencana tim"
     label_new_team_planner: "Perencana tim baru"
     label_create_new_team_planner: "Buat rencana tim baru"
     label_team_planner_plural: "Rencana tim"
     label_assignees: "Penerima tugas"
-    upsale:
-      title: "Rencana tim"
-      description: "Dapatkan ikhtisar lengkap tentang perencanaan tim Anda dengan Team Planner.  Rentangkan, perpendek, dan seret dan lepas paket kerja untuk mengubah tanggal, memindahkannya, atau mengubah penerima tugas."

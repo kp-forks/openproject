@@ -1,14 +1,15 @@
 #English strings go here
 mn:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Шинэ самбар үүсгэх'
       label_unnamed_board: 'Нэрлэгдээгүй самбар'
       label_unnamed_list: 'Нэрлэгдээгүй жагсаалт'
       label_board_type: 'Самбарын төрөл'
-      upsale:
-        teaser_text: 'Та самбарын тусламжтайгаар ажлын урсгалаа автоматжуулахыг хүсч байна уу? Нарийвчилсан самбарууд нь Enterprise нэмэлт юм. Төлбөртэй багц болгон шинэчилнэ үү.'
-        upgrade: 'Яг одоо шинэчлэх'
       lists:
         delete: 'Устгасан жагсаалт'
       version:

@@ -6,6 +6,10 @@ da:
   permission_show_board_views: "View boards"
   permission_manage_board_views: "Manage boards"
   project_module_board_view: "Boards"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Board"
     label_boards: "Boards"
@@ -34,6 +38,3 @@ da:
         Board med automatiserede kolonner til underprojekter. Træk arbejdspakker til andre lister opdaterer (under)projektet i overensstemmelse hermed.
       subtasks: >
         Board med automatiserede kolonner til underelementer. Træk arbejdspakker til andre lister, opdaterer den overordnede i overensstemmelse hermed.
-    upsale:
-      teaser_text: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
-      upgrade: 'Upgrade now'

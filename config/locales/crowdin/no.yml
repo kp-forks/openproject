@@ -63,9 +63,6 @@
         main-menu-bg-selected-background: "Hovedmeny når valgt"
         main-menu-bg-hover-background: "Hovedmeny ved peking"
       custom_colors: "Egendefinerte farger"
-      customize: "Tilpass OpenProject-installasjonen med din egen logo og farger."
-      enterprise_notice: "Som en spesiell 'takk!' for deres økonomiske bidrag til å utvikle OpenProject, er dette lille tillegget bare tilgjengelig for Enterprise edition abonnenter."
-      enterprise_more_info: "Merk: den brukte logoen vil være offentlig tilgjengelig."
       manage_colors: "Endre alternativer for fargevalg"
       instructions:
         primary-button-color: "Sterk uthevingsfarge, vanligvis brukt på den viktigste knappen på en skjerm."
@@ -215,9 +212,6 @@
     new: "Legg til tilpasset handling"
     edit: "Rediger egendefinert handling %{name}"
     execute: "Utfør %{name}"
-    upsale:
-      title: "Tilpassede handlinger"
-      description: "Egendefinerte handlinger er snarveier med ett klikk til en rekke forhåndsdefinerte handlinger som du kan gjøre tilgjengelige på visse arbeidspakker basert på status, rolle, type eller prosjekt."
   custom_fields:
     admin:
       custom_field_projects:
@@ -247,8 +241,6 @@
           zero: no sub-items
           one: 1 sub-item
           other: "%{count} sub-items"
-    upsale:
-      custom_field_format_hierarchy: "Need a hierarchy in your custom fields for work packages?"
     text_add_new_custom_field: >
       For å legge til nye egendefinerte felt i et prosjekt må du først opprette dem før du kan legge dem til i dette prosjektet.
     is_enabled_globally: "Er aktivert globalt"
@@ -544,10 +536,6 @@
         Alle forekomster av plassholderbrukeren (f.eks. som utførende, ansvarlig eller andre brukerverdier) blir tilordnet på nytt til en konto kalt "Slettet bruker". Siden dataene for hver slettede konto blir tilordnet denne kontoen vil det ikke være mulig å skille dataene brukeren har opprettet fra data for en annen slettet konto.
       irreversible: "Du kan ikke angre denne handlingen"
       confirmation: "Skriv inn plassholderbrukernavnet %{name} for å bekrefte slettingen."
-    upsale:
-      title: Plassholder brukere
-      description: >
-        Plassholderbrukere er en måte å tilknytte arbeidspakker til brukere som ikke er med i prosjektet. De kan være nyttige i en rekke scenarioer; for eksempel hvis du må spore oppgaver for en ressurs som ennå ikke er navngitt eller tilgjengelig, eller hvis du ikke vil gi den personen tilgang til OpenProject, men fortsatt vil spore oppgaver tilordnet dem.
   prioritiies:
     edit:
       priority_color_text: |
@@ -603,8 +591,6 @@
     edit:
       form_configuration:
         tab: "Skjema konfigurering"
-      more_info_text_html: >
-        Enterprise versjonen gir deg mulighet til å tilpasse konfigurasjon av skjemaer med disse utvidelsene: <br><ul class="%{list_styling_class}">Legg til nye egenskaps-grupper</b></li><li><b>Endre navn på egenskapsgrupper</b></li><li><b>Legg til en tabell over relaterte arbeidspakker</b></li></ul>
       projects:
         tab: "Prosjekter"
         enabled_projects: "Aktiverte prosjekter"
@@ -1048,6 +1034,7 @@
         consented_at: "Godkjent"
       user_preference:
         comments_sorting: "Vis kommentarer"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Tilgjengelighetsmodus"
         auto_hide_popups: "Auto-skjul suksessvarsler"
         warn_on_leaving_unsaved: "Varsle meg når jeg forlater en arbeidspakke med ulagrede endringer"
@@ -1967,17 +1954,78 @@
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: LTR
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Enterprise programtillegg"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Mer informasjon"
-      automatic_subject_generation:
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Tilpass skjemakonfigurasjonen med disse ekstra utvidelsene:"
-        add_groups: "Legg til nye attributtgrupper"
-        rename_groups: "Endre attributtgrupper"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Tidregistrering aktiviteter"
   enumeration_work_package_priorities: "Prioritering av arbeidspakker"
   enumeration_reported_project_statuses: "Rapportert prosjektstatus"
@@ -3242,6 +3290,7 @@
   notice_successful_delete: "Slettingen var vellykket."
   notice_successful_cancel: "Successful cancellation."
   notice_successful_update: "Oppdateringen var vellykket."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Vellykket oppdatering. Spesifikke felter for aktiverte typer blir automatisk aktivert
     på arbeidspakkeskjema. <a href="%{url}" target="_blank">Se mer</a>.
@@ -3736,8 +3785,6 @@
         Gjenværende filer er skannet. Det er %{file_count} i karantene. Du blir omdirigert til karantensiden. Bruk denne siden til å slette eller overstyre karantenes filer.
       remaining_rescanned_files: >
         Virusskanning har blitt aktivert. Det er %{file_count} filer som ble lastet opp tidligere og fortsatt må skannes. Prosessen er planlagt i bakgrunnen. Filene forblir tilgjengelige under skanningen.
-      upsale:
-        description: "Sikre at opplastede filer i OpenProject blir skannet for virus før de er tilgjengelige for andre brukere."
       actions:
         delete: "Slett filen"
         quarantine: "Sett filen i karantene"
@@ -3823,6 +3870,9 @@
       section_holidays_and_closures: "Ferier og lukking"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Rabatt"
     plain: "Ren tekst"
@@ -3858,8 +3908,6 @@
     Når du bruker egendefinerte felt: Husk at egendefinerte felter må aktiveres per prosjekt, også.
   text_custom_field_hint_activate_per_project_and_type: >
     Egendefinerte felt må aktiveres per arbeidspakketype og per prosjekt.
-  text_wp_status_read_only_html: >
-    Enterprise utgaven vil legge til disse ekstra utvidelsene til arbeidspakkenes statusfelt: <br> <ul> <li><b>Tillat å merke arbeidspakker å leses kun for spesielle statuser</b></li> </ul>
   text_project_custom_field_html: >
     Enterprise utgaven vil legge til disse ekstra utvidelsene for prosjektets egendefinerte felter: <br> <ul> <li><b>Legg til egendefinerte felt for prosjekter i din prosjektliste for å opprette en prosjektporteføljevisning</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4404,27 +4452,3 @@
     description: "Legger til OmniAuth SAML leverandør til OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF Export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

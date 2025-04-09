@@ -110,7 +110,7 @@ ru:
   caption_save_rate: "Сохранить тариф"
   caption_set_rate: "Установить текущий тариф"
   caption_show_locked: "Показывать Заблокированные типы"
-  caption_log_time_dialog: "Журналировать время"
+  caption_log_time_dialog: "Добавить трудозатраты"
   description_date_for_new_rate: "Дата для нового тарифа"
   description_costs_settings: "Определите желаемый формат для затрат во всех проектах."
   description_time_settings: "Определите, какие поля являются обязательными для заполнения при регистрации времени во всех проектах."

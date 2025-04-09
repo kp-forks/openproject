@@ -1,14 +1,15 @@
 #English strings go here
 zh-CN:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: '创建新面板'
       label_unnamed_board: '未命名面板'
       label_unnamed_list: '未命名列表'
       label_board_type: '面板类型'
-      upsale:
-        teaser_text: '您想使用面板自动化您的工作流吗？高级面板是企业附加组件。请升级到付费计划。'
-        upgrade: '立即升级'
       lists:
         delete: '删除列表'
       version:

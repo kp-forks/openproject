@@ -65,6 +65,7 @@ ru:
       metadata:
         dialog: "Это URL-адрес, по которому доступны метаданные OpenProject SAML. При необходимости используйте его для настройки провайдера идентификации:"
       upsale:
+        title: "Single Sign-On (SSO) with SAML"
         description: Подключите OpenProject к провайдеру SAML
       request_attributes:
         title: 'Запрошенные атрибуты'

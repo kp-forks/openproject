@@ -6,6 +6,10 @@
   permission_show_board_views: "Vis tavler"
   permission_manage_board_views: "Administrer tavler"
   project_module_board_view: "Tavler"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Tavle"
     label_boards: "Tavler"
@@ -34,6 +38,3 @@
         Tavle med automatiserte kolonner for underprosjekter. Å dra arbeidspakker til andre lister oppdaterer (under)prosjekter tilsvarende.
       subtasks: >
         Tavle med automatiserte kolonner for underprosjekter. Å dra oppgaver til andre lister oppdaterer overordnet prosjekt tilsvarende.
-    upsale:
-      teaser_text: 'Ønsker du å automatisere dine arbeidsflyter med Tavler? Avanserte tavler er et Enterprise add-on. Vennligst oppgrader til et betalt abonnement.'
-      upgrade: 'Oppgrader nå'

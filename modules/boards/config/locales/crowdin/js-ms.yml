@@ -1,14 +1,15 @@
 #English strings go here
 ms:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Cipta board baru'
       label_unnamed_board: 'Board tanpa nama'
       label_unnamed_list: 'Senarai tanpa nama'
       label_board_type: "Jenis board\n"
-      upsale:
-        teaser_text: 'Adakah anda ingin mengautomasikan aliran kerja dengan Board? Board lanjutan ada di dalam tambahan Enterprise. Sila naik taraf ke pelan berbayar.'
-        upgrade: 'Naik taraf sekarang'
       lists:
         delete: 'Padam senarai'
       version:

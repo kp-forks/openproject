@@ -63,9 +63,6 @@ ru:
         main-menu-bg-selected-background: "Главное меню при выборе"
         main-menu-bg-hover-background: "Главное меню при наведении"
       custom_colors: "Настроить цвета"
-      customize: "Установите в вашем OpenProject свой логотип и цвета."
-      enterprise_notice: "В качестве особого \"Спасибо!\" за их финансовый вклад в разработку OpenProject, это крошечное дополнение доступно только для подписчиков службы поддержки Корпоративной версии."
-      enterprise_more_info: "Примечание: используемый логотип будет общедоступным."
       manage_colors: "Изменить цвет выбранных опций"
       instructions:
         primary-button-color: "Яркий контрастный цвет, который обычно используют для важных кнопок на экране."
@@ -214,9 +211,6 @@ ru:
     new: "Новое пользовательское действие"
     edit: "Редактировать пользовательское действие %{name}"
     execute: "Выполнить %{name}"
-    upsale:
-      title: "Настраиваемые действия"
-      description: "Пользовательские действия сводятся к одному клику по кнопке для совершения заранее определенных действий, которые вы можете сделать доступными для пакетов работ на основании статуса, роли, типа или проекта."
   custom_fields:
     admin:
       custom_field_projects:
@@ -246,8 +240,6 @@ ru:
           zero: нет подпунктов
           one: 1 подпункт
           other: "%{count} подпунктов"
-    upsale:
-      custom_field_format_hierarchy: "Вам нужна иерархия в пользовательских полях для пакетов работ?"
     text_add_new_custom_field: >
       Прежде чем добавлять настраиваемые поля в проект, нужно создать их.
     is_enabled_globally: "Разрешено в глобальном масштабе"
@@ -557,10 +549,6 @@ ru:
         Все вхождения пользователя плейсхолдера (например, как цессионария, ответственные или другие пользовательские значения) будут переназначены на учетную запись под названием "Удаленный пользователь". Так как данные каждого удаленного аккаунта переназначены на этот аккаунт, невозможно отличить данные пользователя от данных другого удаленного аккаунта.
       irreversible: "Это действие необратимо"
       confirmation: "Введите имя пользователя %{name} для подтверждения удаления."
-    upsale:
-      title: Пользователи-заполнители
-      description: >
-        Пользователи Placeholder - это способ назначить пакеты работ пользователям, которые не являются частью вашего проекта. Они могут быть полезными в различных сценариях; например, если вам нужно отслеживать задачи для ресурса, который еще не назван или недоступен или если вы не хотите дать этому человеку доступ к OpenProject, но все равно хотите отслеживать задачи, назначенные ему.
   prioritiies:
     edit:
       priority_color_text: |
@@ -618,8 +606,6 @@ ru:
     edit:
       form_configuration:
         tab: "Настройка формы"
-      more_info_text_html: >
-        Корпоративная редакция позволяет настроить конфигурацию форм с этими дополнительными возможностями: <br> <ul class="%{list_styling_class}"> <li><b>Добавить новые группы атрибутов</b></li> <li><b>Переименовать группы атрибутов</b></li> </ul>
       projects:
         tab: "Проекты"
         enabled_projects: "Включенные проекты"
@@ -1065,6 +1051,7 @@ ru:
         consented_at: "Согласен с"
       user_preference:
         comments_sorting: "Показывать комментарии"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Режим отображения для людей с ограниченными возможностями"
         auto_hide_popups: "Автоматически скрывать уведомления об успешных действиях"
         warn_on_leaving_unsaved: "При покидании рабочего пакета предупреждать о не сохраненных изменениях"
@@ -1114,7 +1101,7 @@ ru:
         spent_hours: "Затраченное время"
         spent_time: "Затраченное время"
         subproject: "Подпроект"
-        time_entries: "Журналировать время"
+        time_entries: "Добавить трудозатраты"
         type: "Тип"
         version: "Этапы"
         watcher: "Наблюдатель"
@@ -2044,17 +2031,78 @@ ru:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: Слева направо
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Корпоративное дополнение"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Дополнительная информация"
-      automatic_subject_generation:
-        description: "Создать автоматически генерируемые темы, используя атрибуты и текст."
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
+        description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Создание и организация этапов и стадий проекта, отличных от тех, что предусмотрены планированием цикла проекта PM2."
-      form_configuration:
-        description: "Настройте конфигурацию формы с помощью этих дополнительных дополнений:"
-        add_groups: "Добавить новую группу атрибутов"
-        rename_groups: "Переименовать группу атрибутов"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Отслеживание времени"
   enumeration_work_package_priorities: "Приоритеты пакета работ"
   enumeration_reported_project_statuses: "Перечень отчетов о статусах проекта"
@@ -3320,6 +3368,7 @@ ru:
   notice_successful_delete: "Удаление выполнено."
   notice_successful_cancel: "Отмена прошла успешно."
   notice_successful_update: "Обновление выполнено."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Успешное обновление. Пользовательские поля активированных типов автоматически активируются
     в форме пакета работ. <a href="%{url}" target="_blank">Подробнее</a>.
@@ -3411,7 +3460,7 @@ ru:
   permission_export_work_packages: "Экспорт пакетов работ"
   permission_export_wiki_pages: "Экспорт wiki-страниц"
   permission_list_attachments: "Отобразить список прикреплённых файлов"
-  permission_log_own_time: "Журналировать свои трудозатраты"
+  permission_log_own_time: "Добавить свои трудозатраты"
   permission_log_time: "Журналировать трудозатраты других пользователей"
   permission_manage_forums: "Управление форумами"
   permission_manage_categories: "Управление категориями пакета работ"
@@ -3814,8 +3863,6 @@ ru:
         Оставшиеся файлы были просканированы. В карантине находится %{file_count} . Вы перенаправляетесь на страницу карантина. Используйте эту страницу, чтобы удалить или отменить файлы, помещенные в карантин.
       remaining_rescanned_files: >
         Проверка на вирусы успешно включена. Есть %{file_count}, которые были загружены ранее и все еще нуждаются в сканировании. Этот процесс был запланирован в фоновом режиме. Файлы останутся доступными во время сканирования.
-      upsale:
-        description: "Убедитесь, что загруженные файлы в OpenProject проверяются на наличие вирусов, прежде чем они станут доступны другим пользователям."
       actions:
         delete: "Удалить файл"
         quarantine: "Поместите файл в карантин"
@@ -3901,6 +3948,9 @@ ru:
       section_holidays_and_closures: "Праздничные и нерабочие дни"
     work_packages:
       not_allowed_text: "У вас нет необходимых прав для просмотра этой страницы."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Обычный текст"
@@ -3936,8 +3986,6 @@ ru:
     Помните, что настраиваемые поля тоже нужно включать в каждом проекте по отдельности.
   text_custom_field_hint_activate_per_project_and_type: >
     Настраиваемые поля нужно включать для каждого типа пакета работ и для каждого проекта в отдельности.
-  text_wp_status_read_only_html: >
-    Корпоративная версия добавит эти дополнительные дополнения для полей статусов пакетов работ: <br> <ul> <li><b>Разрешить помечать пакеты работ только для чтения в определенные статусы</b></li> </ul>
   text_project_custom_field_html: >
     Корпоративная версия добавит эти дополнительные дополнения для пользовательских полей проектов: <br> <ul> <li><b>Добавить пользовательские поля для проектов в ваш список проектов, чтобы создать представление портфолио проекта</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4485,27 +4533,3 @@ ru:
     description: "Добавляет поставщика OmniAuth SAML в OpenProject"
   enterprise_plans:
     legacy_enterprise: "Корпоративная лицензия"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Просмотр доски
-    conditional_highlighting: Условное выделение
-    custom_actions: Пользовательские действия
-    custom_field_hierarchies: Иерархии пользовательских полей
-    customize_life_cycle: Настройка жизненного цикла
-    date_alerts: Дата оповещения
-    define_custom_style: Определить пользовательский стиль
-    edit_attribute_groups: Редактирование атрибутов групп
-    gantt_pdf_export: Экспорт диаграммы Ганта в PDF
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: Группы LDAP
-    one_drive_sharepoint_file_storage: Файловое хранилище OneDrive/SharePoint
-    placeholder_users: Пользователи-заполнители
-    project_list_sharing: Совместное использование списка проектов
-    readonly_work_packages: Пакеты работ только для чтения
-    sso_auth_providers: Поставщики аутентификации SSO
-    team_planner_view: Просмотр командных планировщиков
-    two_factor_authentication: Двухфакторная аутентификация
-    virus_scanning: Сканирование вложений на вирусы
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Совместное использование пакета работ
-    work_package_subject_generation: Создание темы пакета работ

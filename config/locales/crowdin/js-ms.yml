@@ -631,9 +631,6 @@ ms:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Peringatan tarikh"
-          description: "Dengan peringatan tarikh, anda akan dimaklumkan tentang tarikh mula dan akhir yang akan datang supaya anda tidak pernah terlepas atau lupa tarikh akhir yang penting."
       center:
         label_actor_and: "dan"
         and_more_users:
@@ -695,7 +692,6 @@ ms:
           date_alerts:
             title: "Peringatan tarikh"
             description: "Pemberitahuan secara automatik apabila tarikh penting menghampiri untuk pakej kerja terbuka yang anda terlibat (penerima tugasan, bertanggungjawab atau pemerhati)."
-            teaser_text: "Dengan peringatan tarikh, anda akan dimaklumkan tentang tarikh mula dan akhir yang akan datang supaya anda tidak pernah terlepas atau lupa tarikh akhir yang penting."
           overdue: Apabila tertunggak
         project_specific:
           title: "Tetapan pemberitahuan khusus projek"
@@ -1046,8 +1042,6 @@ ms:
       sharing:
         title: "Kongsi pakej kerja"
         show_all_users: "Paparkan kepada semua pengguna dengan siapa pakej kerja telah dikongsikan"
-        upsale:
-          description: "Kongsi pakej kerja dengan pengguna yang bukan ahli projek."
       table:
         configure_button: "Konfigurasi jadual pakej kerja"
         summary: "Jadual dengan baris pakej kerja dan kolum atribut pakej kerja."
@@ -1082,10 +1076,6 @@ ms:
           manually: "Secara manual"
           warning: "Anda akan hilang penyusunan sebelumnya apabila mengaktifkan mod penyusunan automatik."
         columns_help_text: "Guna ruang input diatas untuk tambah kolum ke paparan jadual anda. Anda boleh tarik dan lepas ke kolum untuk menyusun mereka semula."
-        upsale:
-          attribute_highlighting: "Perlukan pakej kerja tertentu yang menarik dari massa?"
-          relation_columns: "Perlu melihat hubungan dalam senarai pakej kerja?"
-          check_out_link: "Lihat edisi Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Saring pakej kerja mengikut jenis hubungan"
       tabs:
@@ -1296,9 +1286,7 @@ ms:
       clear: "Kosongkan"
       apply: "Gunakan"
       header_description: "Sorotkan perubahan yang dibuat ke senarai ini pada bila-bila masa lalu."
-      enterprise_header_description: "Sorotkan perubahan yang dibuat ke senarai ini pada bila-bila masa lalu dengan edisi Enterprise."
       show_changes_since: "Paparkan perubahan sejak"
-      baseline_comparison: "Perbandingan garis panduan asas"
       help_description: "Zon masa rujukan untuk garis panduan asas."
       time_description: "Dalam masa tempatan anda: %{datetime}"
       time: "Masa"

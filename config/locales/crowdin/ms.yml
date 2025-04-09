@@ -63,9 +63,6 @@ ms:
         main-menu-bg-selected-background: "Menu utama apabila dipilih"
         main-menu-bg-hover-background: "Menu utama pada hover"
       custom_colors: "Pilihan warna tersuai"
-      customize: "Ubah suai pemasangan OpenProject dengan logo dan warna anda sendiri."
-      enterprise_notice: "'Terima kasih!' sebagai tanda istimewa atas kontribusi kewangan mereka untuk membangunkan OpenProject, penambahan kecil ini hanya tersedia untuk pelanggan sokongan edisi Enterprise."
-      enterprise_more_info: "Perhatian: logo yang digunakan akan boleh diakses secara umum."
       manage_colors: "Edit pilihan pilihan warna "
       instructions:
         primary-button-color: "Warna aksen yang kuat, digunakan untuk butang paling penting pada skrin"
@@ -214,9 +211,6 @@ ms:
     new: "Tindakan tersuai baharu"
     edit: "Edit tindakan tersuai %{name}"
     execute: "Laksanakan %{name}"
-    upsale:
-      title: "Tindakan tersuai"
-      description: "Tindakan tersuai adalah pintasan satu klik ke satu set tindakan yang telah ditetapkan yang anda boleh sediakan untuk pakej kerja tertentu berdasarkan status, peranan, jenis atau projek."
   custom_fields:
     admin:
       custom_field_projects:
@@ -246,8 +240,6 @@ ms:
           zero: tiada sub-item
           one: 1 sub-item
           other: "%{count} sub-item"
-    upsale:
-      custom_field_format_hierarchy: "Perlukan hierarki dalam medan tersuai anda untuk pakej kerja?"
     text_add_new_custom_field: >
       Untuk menambah ruang tersuai ke projek, anda perlu menciptanya terlebih dahulu sebelum anda boleh menambahnya ke projek ini.
     is_enabled_globally: "Adalah diaktifkan secara global"
@@ -536,10 +528,6 @@ ms:
         Semua kejadian pengguna placeholder (cth., sebagai penerima tugasan, bertanggungjawab atau nilai pengguna lain) akan ditugaskan semula kepada akaun yang dipanggil "Pengguna yang dipadam". Oleh kerana data setiap akaun yang dipadam ditugaskan semula ke akaun ini, tidak mungkin akan dapat untuk membezakan data yang dicipta oleh pengguna, daripada data akaun lain yang dipadam.
       irreversible: "Tindakan ini tidak dapat dipulihkan"
       confirmation: "Masukkan nama pengguna placeholder %{name} untuk mengesahkan pembuangan."
-    upsale:
-      title: Pengguna placeholder
-      description: >
-        Pengguna placeholder ialah satu cara untuk memperuntukkan pakej kerja kepada pengguna yang bukan sebahagian daripada projek anda. Ianya berguna dalam pelbagai senario; contohnya, jika anda perlu menjejaki tugas untuk sumber yang masih belum dinamakan atau disediakan, atau jika anda tidak ingin memberikan akses kepada seseorang di OpenProject, tetapi masih hendak menjejaki tugas yang telah diperuntukkan ke mereka.
   prioritiies:
     edit:
       priority_color_text: |
@@ -594,8 +582,6 @@ ms:
     edit:
       form_configuration:
         tab: "Konfigurasi borang"
-      more_info_text_html: >
-        Edisi Enterprise membenarkan anda untuk menyuaikan borang konfigurasi dengan segala jenis penambahan: <br> <ul class="%{list_styling_class}"> <li><b>Tambah kumpulan atribut baharu</b></li> <li><b>Namakan semula atribut kumpulan</b></li> <li><b>Tambah jadual pakej kerja yang berkaitan</b></li> </ul>
       projects:
         tab: "Projek"
         enabled_projects: "Projek yang didayakan"
@@ -1038,6 +1024,7 @@ ms:
         consented_at: "Dipersetujui di"
       user_preference:
         comments_sorting: "Paparkan komen"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Mod ketercapaian"
         auto_hide_popups: "Pemberitahuan kejayaan auto-sembunyi"
         warn_on_leaving_unsaved: "Beri amaran kepada saya apabila meninggalkan pakej kerja dengan perubahan yang belum disimpan."
@@ -1927,17 +1914,78 @@ ms:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: ltr
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Alat tambah perusahaan"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "Maklumat lanjut"
-      automatic_subject_generation:
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Menyuaikan borang konfigurasi dengan segala jenis tambahan ini:"
-        add_groups: "Tambah kumpulan atribut baharu"
-        rename_groups: "Nama semula kumpulan atribut"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Aktiviti penjejakan masa"
   enumeration_work_package_priorities: "Keutamaan pakej kerja"
   enumeration_reported_project_statuses: "Status projek yang dilaporkan"
@@ -3201,6 +3249,7 @@ ms:
   notice_successful_delete: "Pemadaman berjaya."
   notice_successful_cancel: "Pembatalan yang berjaya."
   notice_successful_update: "Kemas kini berjaya."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Naik taraf berjaya. Jenis ruang tersuai yang aktif telah diaktifkan di borang pakej kerja secara automatik. <a href="%{url}" target="_blank">Lihat lebih lagi</a>.
   notice_to_many_principals_to_display: "Terlalu banyak hasil.\nSpesifikasikan pencarian dengan masukkan nama ahli baru (atau kumpulan)."
@@ -3693,8 +3742,6 @@ ms:
         Fail yang berbaki telah diimbas. Terdapat %{file_count} dalam pengasingan. Anda sedang diubah hala ke halaman pengasingan. Guna halaman ini untuk memadam atau mengganti fail yang diasingkan.
       remaining_rescanned_files: >
         Pengimbasan virus telah berjaya diaktifkan. Terdapat %{file_count} yang sebelum ini dimuat naik dan masih perlu diimbas. Proses ini telah dijadualkan di latar belakang. Fail tersebut akan kekal boleh diakses semasa pengimbasan.
-      upsale:
-        description: "Pastikan fail yang dimuat naik dalam OpenProject diimbas untuk virus sebelum boleh diakses oleh pengguna lain."
       actions:
         delete: "Padamkan fail tersebut"
         quarantine: "Kuarantinkan fail tersebut"
@@ -3780,6 +3827,9 @@ ms:
       section_holidays_and_closures: "Hari perayaan dan penutupan"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Teks biasa"
@@ -3815,8 +3865,6 @@ ms:
     Apabila menggunakan ruang tersuai: Ingatlah bahawa ruang tersuai perlu diaktifkan untuk setiap projek juga.
   text_custom_field_hint_activate_per_project_and_type: >
     Ruang tersuai perlu diaktifkan untuk setiap jenis pakej kerja dan setiap projek.
-  text_wp_status_read_only_html: >
-    Edisi Enterprise akan menambahkan segala tambahan ke ruang status pakej kerja: <br> <ul> <li><b>Benarkan untuk menandakan pakej kerja untuk baca-sahaja pada status tertentu </b></li> </ul>
   text_project_custom_field_html: >
     Edisi Enterprise akan menambahkan segala jenis tambahan ke ruang tersuai projek: <br> <ul> <li><b> Tambah ruang tersuai ke projek ke senarai Projek anda untuk ciptakan paparan portfolio project </b></li> </ul>
   text_custom_logo_instructions: >
@@ -4359,27 +4407,3 @@ ms:
     description: "Tambah penyediaan SAML OmniAuth ke OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF Export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

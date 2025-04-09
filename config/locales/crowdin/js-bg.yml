@@ -631,9 +631,6 @@ bg:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "и"
         and_more_users:
@@ -696,7 +693,6 @@ bg:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Project-specific notification settings"
@@ -1047,8 +1043,6 @@ bg:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Configure work package table"
         summary: "Таблица с атрибути от редове и колони на работен пакет."
@@ -1083,10 +1077,6 @@ bg:
           manually: "Ръчно"
           warning: "Ще загубите предишното си сортиране, когато активирате автоматичния режим на сортиране."
         columns_help_text: "Използвайте полето за въвеждане по-горе, за да добавите колони към изгледа на вашата таблица. Можете да плъзгате и пускате колоните, за да ги пренареждате."
-        upsale:
-          attribute_highlighting: "Need certain work packages to stand out from the mass?"
-          relation_columns: "Need to see relations in the work package list?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "Filter work packages by relation type"
       tabs:
@@ -1300,9 +1290,7 @@ bg:
       clear: "Изчистване"
       apply: "Приложи"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "Час"

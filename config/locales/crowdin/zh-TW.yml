@@ -63,9 +63,6 @@ zh-TW:
         main-menu-bg-selected-background: "主畫面背景（當選擇時）"
         main-menu-bg-hover-background: "主要選單（滑鼠移入時）"
       custom_colors: "自訂顏色"
-      customize: "客製OpenProject中專屬您的標誌(logo)與顏色"
-      enterprise_notice: "這個插件僅對企業版支持訂閱者開放，以感謝他們對開發 OpenProject 的贊助。"
-      enterprise_more_info: "備註：Logo可被公開存取"
       manage_colors: "編輯顏色選擇選項"
       instructions:
         primary-button-color: "強烈的重點顏色，用於螢幕上最重要的按鈕。"
@@ -214,9 +211,6 @@ zh-TW:
     new: "新增自訂操作"
     edit: "編輯自訂操作 %{name}"
     execute: "執行 %{name}"
-    upsale:
-      title: "自訂動作"
-      description: "自訂動作是一系列預先定義動作的單鍵捷徑，您可以根據狀態、角色、類型或專案，在特定工作套件上使用這些動作。"
   custom_fields:
     admin:
       custom_field_projects:
@@ -246,8 +240,6 @@ zh-TW:
           zero: 無子項目
           one: 1 個子項目
           other: "%{count} 子項目"
-    upsale:
-      custom_field_format_hierarchy: "工作項目的自訂欄位需要分層嗎？"
     text_add_new_custom_field: >
       要加入客製欄位至一個專案，您必須先建立欄位才能將它們加入至此專案。
     is_enabled_globally: "已全域啟用"
@@ -536,10 +528,6 @@ zh-TW:
         出現的所有佔位符用戶(例如，作為受理人、負責人或其他用戶值) 將被重新分配給一個名為“已刪除用戶”的帳戶。 由於每個已刪除帳戶的數據都會被重新分配給此帳戶，因此無法將用戶創建的數據與另一個已刪除帳戶的數據區分。
       irreversible: "這一行動是不可還原的"
       confirmation: "輸入占位使用者名稱 %{name} 確認刪除。"
-    upsale:
-      title: 占位使用者
-      description: >
-        「佔位使用者」是一種將工作項目分配給不屬於您專案成員的方法。它們在一系列場景中十分有用；例如，如果您需要追蹤尚未命名或可用的資源的任務，或者如果您不想讓該人員存取專案，但仍希望追蹤分配給他們的任務。
   prioritiies:
     edit:
       priority_color_text: |
@@ -594,8 +582,6 @@ zh-TW:
     edit:
       form_configuration:
         tab: "表單設置"
-      more_info_text_html: >
-        企業版允許您使用以下附加組件自定義表單設定：<br> <ul class="%{list_styling_class}"> <li><b>添加新屬性組</b></li> <li><b>重命名屬性組</b></li> <li><b>添加相關工作項目表</b></li> </ul>
       projects:
         tab: "專案"
         enabled_projects: "已啟用專案"
@@ -1038,6 +1024,7 @@ zh-TW:
         consented_at: "同意在"
       user_preference:
         comments_sorting: "顯示留言"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "協助工具模式"
         auto_hide_popups: "提醒後自動隱藏"
         warn_on_leaving_unsaved: "離開尚未儲存的工作項目時提示我"
@@ -1927,17 +1914,78 @@ zh-TW:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: 由左至右
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "企業版附加元件"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "更多資訊"
-      automatic_subject_generation:
-        description: "使用參考的屬性和文字建立自動產生的主題。"
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
+        description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "建立並組織不同於 PM2 專案週期規劃所提供的專案階段。"
-      form_configuration:
-        description: "使用以下附加組件自定義表單配置："
-        add_groups: "增加新的屬性群組"
-        rename_groups: "重新命名屬性群组"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "時間追蹤活動"
   enumeration_work_package_priorities: "工作項目優先等級"
   enumeration_reported_project_statuses: "報告的專案狀態"
@@ -3200,6 +3248,7 @@ zh-TW:
   notice_successful_delete: "刪除成功"
   notice_successful_cancel: "取消成功"
   notice_successful_update: "更新成功"
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     更新成功。相關類型之專案，此客製欄位會自動啟動。<a href="%{url}" target="_blank">看更多</a>。
   notice_to_many_principals_to_display: "搜尋的結果太多。\n請透過輸入新成員 (群組) 的名稱來縮小搜尋的範圍。"
@@ -3692,8 +3741,6 @@ zh-TW:
         剩餘文件已掃描。%{file_count} 個文件位於隔離區。您將被重定向到隔離區頁面。使用此頁面可以刪除或覆蓋被隔離的文件。
       remaining_rescanned_files: >
         病毒掃描已成功啓用。之前上傳的 %{file_count} 仍需掃描。此過程已在後台安排。掃描期間，文件仍可訪問。
-      upsale:
-        description: "確保在其他使用者存取 OpenProject 中上傳的檔案前，對其進行病毒掃描。"
       actions:
         delete: "刪除檔案"
         quarantine: "隔離該檔案"
@@ -3779,6 +3826,9 @@ zh-TW:
       section_holidays_and_closures: "假日和休息日"
     work_packages:
       not_allowed_text: "您沒有查看此頁面的必要權限。"
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "純文字"
@@ -3814,8 +3864,6 @@ zh-TW:
     當使用客製欄位：請留意欄位需要依專案個別啟用。
   text_custom_field_hint_activate_per_project_and_type: >
     客製欄位需要個別被工作項目類別和專案啟用。
-  text_wp_status_read_only_html: >
-    企業版將提供額外模組到工作項目：<br> <ul> <li><b>允許將特定狀態的工作項目設定為唯讀</b></li> </ul>
   text_project_custom_field_html: >
     企業版將為項目的自定義字段添加以下其他附加組件：<br> <ul> <li><b>在項目列表中添加項目自定義字段，以創建項目組合視圖</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4358,27 +4406,3 @@ zh-TW:
     description: "將 OmniAuth SAML 提供商增加到 OpenProject"
   enterprise_plans:
     legacy_enterprise: "企業方案"
-  enterprise_features:
-    baseline_comparison: 差異線比較
-    board_view: 板面檢視
-    conditional_highlighting: 條件強調
-    custom_actions: 自訂動作
-    custom_field_hierarchies: 自訂欄位層級
-    customize_life_cycle: 自訂生命週期
-    date_alerts: 日期提醒
-    define_custom_style: 定義自訂樣式
-    edit_attribute_groups: 編輯屬性群組
-    gantt_pdf_export: 甘特圖以PDF匯出
-    grid_widget_wp_graph: 網格小工具工作項目圖形
-    ldap_groups: LDAP群組
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint 檔案儲存
-    placeholder_users: 占位使用者
-    project_list_sharing: 專案清單分享
-    readonly_work_packages: 唯讀工作項目
-    sso_auth_providers: SSO 驗證提供者
-    team_planner_view: 團隊規劃檢視
-    two_factor_authentication: 雙重身分驗證
-    virus_scanning: 附件病毒掃描
-    work_package_query_relation_columns: 工作項目查詢關聯列
-    work_package_sharing: 工作項目分享
-    work_package_subject_generation: 工作項目標題產生

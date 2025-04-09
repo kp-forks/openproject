@@ -1,12 +1,13 @@
 uk:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Додати віджет'
       remove: 'Видалити віджет'
       configure: 'Налаштувати віджет'
-      upsale:
-        text: "Деякі віджети, наприклад віджет графіку пакет робіт, доступні тільки у версії Enterprise."
-        link: 'Версія Enterprise.'
       widgets:
         missing_permission: "У вас немає дозволів для перегляду цього віджета."
         custom_text:

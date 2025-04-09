@@ -3,21 +3,98 @@ title: OpenProject 15.5.0
 sidebar_navigation:
     title: 15.5.0
 release_version: 15.5.0
-release_date: 2025-04-03
+release_date: 2025-04-16
 ---
 
 # OpenProject 15.5.0
 
-Release date: 2025-04-03
+Release date: 2025-04-16
 
-We released OpenProject [OpenProject 15.5.0](https://community.openproject.org/versions/2171).
-The release contains several bug fixes and we recommend updating to the newest version.
-In these Release Notes, we will give an overview of important feature changes.
-At the end, you will find a complete list of all changes and bug fixes.
+We released [OpenProject 15.5.0](https://community.openproject.org/versions/2171). The release contains several bug fixes, and we recommend updating to the newest version. In these Release Notes, we will give an overview of important feature changes. At the end, you will find a complete list of all changes and bug fixes.
 
 ## Important feature changes
 
-<!-- Inform about the major features in this section -->
+### Filter for descendants (children and grandchildren) of work packages
+
+In OpenProject 15.5, you can now filter for all descendants of a work package — including children, grandchildren, and deeper levels. This is especially helpful when focusing on a specific part of a project that includes multiple levels of work packages.
+
+The new filter option **Descendants of** allows you to select one or more parent work packages by ID and display all their subordinate items. It is available wherever filters are supported — such as work package tables or agile boards.
+
+Previously, it was only possible to filter for parent work packages, not their lower-level hierarchy.
+
+![Work package table filtered for descendants of a phase](openproject-15-5-descendants-filter-highlighted.png)
+
+### % Complete included in work package table sums
+
+The **% Complete** value is now included in the sum row of work package tables. This complements the existing Work and Remaining work columns and gives a quick, consistent overview of project progress.
+
+All three values — Work, Remaining work, and % Complete — are calculated in alignment with the selected progress reporting mode.
+
+![Work package table showing % Complete, Work and Remaining work – with highlighted sums](openproject-15-5-percentage-complete-sum-highlighted.png)
+
+### Column for children in work package tables (Enterprise add-on)
+
+OpenProject 15.5 introduces a new **Children** column in work package tables. Similar to other relation columns, this column provides an expandable view showing related child work packages directly in the table — without needing to filter for them separately.
+
+This makes it easier to get a quick overview of a parent work package and its structure, especially when working with large datasets or filtered views.
+
+The column displays the number of children next to each parent, along with a clickable dropdown symbol. 
+
+![Work package table with a highlighted 'Children' column - the number of children being displayed next to each parent, along with a dropdown-symbol](openproject-15-5-children-work-package-table-highlighted.png)
+
+Clicking on the dropdown symbol expands the view to show all related child work packages, each marked with a **Child** label:
+
+![Work package table with expanded children work packages in the children column](openproject-15-5-children-work-package-table-unfolded.png)
+
+> [!NOTE]
+> All relationship columns are [Enterprise add-ons](https://www.openproject.org/enterprise-edition/).
+
+### Advanced accessibility in the date picker
+
+Accessibility remains a key focus in OpenProject, and with version 15.5, we’ve enhanced support for screen readers. These improvements ensure that users relying on assistive technologies receive meaningful feedback during manual date input.
+
+- Informative announcements are now triggered when switching between manual and automatic scheduling.
+- Changes in one date field (e.g., Start date or Duration) are announced as they update related fields.
+- The “Today” shortcuts include ARIA labels to give clear context, such as “Select today as start date.”
+
+This update is part of our ongoing ARIA implementation strategy, with [further accessibility enhancements planned in upcoming versions](https://community.openproject.org/wp/62708).
+
+### Improved date picker rendering in mobile screens
+
+The date picker now uses the native mobile date input and **opens in a full-screen modal on small screens**. This improves accessibility and interaction. The mini calendar has been removed to reduce clutter and improve usability on mobile devices.
+
+### PDF exports matching configured form layout
+
+Single work package PDF exports now **follow the configured form layout**, including attribute groups, field order, and long text fields. For example, if the Date field is grouped with other scheduling fields in your form configuration, it will appear the same way in the PDF — not split into separate start and end dates.
+
+You can also **export in portrait or landscape orientation**, and **query group tables are included if configured**. If a table doesn’t fit on the page, a note is displayed instead.
+
+### Chronological ordering of relations
+
+Relations in the Relations tab and date picker are now consistently ordered by their creation date, regardless of whether the related work packages are fully visible or permission-restricted.
+
+This change improves clarity by showing relations in the exact order they were added — with the oldest first — and removes the previous grouping by visibility status.
+
+### Work package related project settings grouped in a new entry
+
+To improve navigation, related project settings have been grouped under a new **Work packages** section in the project settings. This section includes three tabs:
+
+- [Types](../../user-guide/projects/project-settings/work-packages/#work-package-types)
+- [Categories](../../user-guide/projects/project-settings/work-packages/#work-package-categories)
+- [Custom fields](../../user-guide/projects/project-settings/work-packages/#work-package-custom-fields)
+
+The previous individual entries have been moved into this grouped view. Existing URLs now redirect to their new locations, ensuring a smooth transition. This is a structural improvement only — no changes were made to permissions or underlying functionality.
+
+### Classic meetings marked as unsupported — removal planned for the next release
+
+With the recent improvements to One-time and Recurring meetings, the older Classic meetings are now considered outdated and will be removed in the next OpenProject release (16.0). This change has been planned and communicated since the introduction of what were then called Dynamic meetings (now One-time and Recurring).
+
+To prepare for this transition, the **Classic option in the + Meeting dropdown is now marked as unsupported**, accompanied by the following notice: “Classic meetings will be removed in the next version of OpenProject.”
+
+![Dropdown menu in the OpenProject Meetings module, with highlighted option of "Classic (unsupported)"](openproject-15-5-classic-meetings-highlighted.png)
+
+> [!NOTE]
+> We recommend switching to the newer Meeting types to benefit from the latest features and ensure a smooth transition. [Read this article to learn more about the reasons and what will happen to your existing Classic meetings](https://www.openproject.org/blog/).
 
 ## Important updates and breaking changes
 
@@ -80,12 +157,13 @@ At the end, you will find a complete list of all changes and bug fixes.
 <!-- Warning: Anything above this line will be automatically removed by the release script -->
 
 ## Contributions
-A very special thank you goes to our sponsors for this release.
-Also a big thanks to our Community members for reporting bugs and helping us identify and provide fixes.
-Special thanks for reporting and finding bugs go to Abhiyan Paudyal, Andreas H., Paul Kernstock, Patrick Stapf, Stefan Weiberg.
+A very special thank you goes to City of Cologne, Deutsche Bahn and ZenDiS for sponsoring released or upcoming features. Your support, alongside the efforts of our amazing Community, helps drive these innovations.
 
-Last but not least, we are very grateful for our very engaged translation contributors on Crowdin, who translated quite a few OpenProject strings!
-Would you like to help out with translations yourself?
-Then take a look at our translation guide and find out exactly how you can contribute.
-It is very much appreciated!
+Special thanks for reporting and finding bugs go to Abhiyan Paudyal, Andreas H., Paul Kernstock, Patrick Stapf, and Stefan Weiberg.
 
+Last but not least, we are very grateful for our very engaged translation contributors on Crowdin, who translated quite a few OpenProject strings! This release we would like to particularly thank the following users:
+- [NCAA](https://crowdin.com/profile/ncaa), for a great number of translations into Danish.
+- [greench](https://crowdin.com/profile/greench), for a great number of translations into Turkish.
+- [Adam Siemienski](https://crowdin.com/profile/siemienas), for a great number of translations into Polish.
+
+Would you like to help out with translations yourself? Then take a look at our [translation guide](../../contributions-guide/translate-openproject/) and find out exactly how you can contribute. It is very much appreciated!

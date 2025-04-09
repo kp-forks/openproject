@@ -1,14 +1,15 @@
 #English strings go here
 hu:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Új tábla létrehozása'
       label_unnamed_board: 'Névtelen tábla'
       label_unnamed_list: 'Névtelen lista'
       label_board_type: 'Tábla típus'
-      upsale:
-        teaser_text: 'Szeretné automatizálni a munkafolyamatait a Boards-szal? A fejlett táblák Enterprise funkció. Kérjük, frissítsen fizetős csomagra.'
-        upgrade: 'Frissítés most'
       lists:
         delete: 'Törölt lista'
       version:

@@ -631,9 +631,6 @@ ka:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "განგაშების თარიღი"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "და"
         and_more_users:
@@ -696,7 +693,6 @@ ka:
           date_alerts:
             title: "განგაშების თარიღი"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: როცა ვადა გადაცილდება
         project_specific:
           title: "Project-specific notification settings"
@@ -1047,8 +1043,6 @@ ka:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Configure work package table"
         summary: "Table with rows of work package and columns of work package attributes."
@@ -1083,10 +1077,6 @@ ka:
           manually: "ხელით"
           warning: "You will lose your previous sorting when activating the automatic sorting mode."
         columns_help_text: "Use the input field above to add columns to your table view. You can drag and drop the columns to reorder them."
-        upsale:
-          attribute_highlighting: "Need certain work packages to stand out from the mass?"
-          relation_columns: "Need to see relations in the work package list?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "Filter work packages by relation type"
       tabs:
@@ -1300,9 +1290,7 @@ ka:
       clear: "გასუფთავება"
       apply: "გადატარება"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "დრო"

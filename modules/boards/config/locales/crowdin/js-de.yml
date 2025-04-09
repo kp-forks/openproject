@@ -1,14 +1,15 @@
 #English strings go here
 de:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Neues Board erstellen'
       label_unnamed_board: 'Unbenanntes Board'
       label_unnamed_list: 'Unbenannte Liste'
       label_board_type: 'Board-Typ'
-      upsale:
-        teaser_text: 'Möchten Sie Ihre Workflows mit Boards automatisieren? Erweiterte Boards sind ein Enterprise Add-on. Bitte upgraden Sie auf ein kostenpflichtiges Abonnement.'
-        upgrade: 'Jetzt Upgrade durchführen'
       lists:
         delete: 'Liste löschen'
       version:

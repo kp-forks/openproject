@@ -63,9 +63,6 @@ kk:
         main-menu-bg-selected-background: "Main menu when selected"
         main-menu-bg-hover-background: "Main menu on hover"
       custom_colors: "Custom colors"
-      customize: "Customize your OpenProject installation with your own logo and colors."
-      enterprise_notice: "As a special 'Thank you!' for their financial contribution to develop OpenProject, this tiny add-on is only available for Enterprise edition support subscribers."
-      enterprise_more_info: "Note: the used logo will be publicly accessible."
       manage_colors: "Edit color select options"
       instructions:
         primary-button-color: "Strong accent color, used for the most important button on a screen."
@@ -215,9 +212,6 @@ kk:
     new: "New custom action"
     edit: "Edit custom action %{name}"
     execute: "Execute %{name}"
-    upsale:
-      title: "Custom actions"
-      description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
   custom_fields:
     admin:
       custom_field_projects:
@@ -247,8 +241,6 @@ kk:
           zero: no sub-items
           one: 1 sub-item
           other: "%{count} sub-items"
-    upsale:
-      custom_field_format_hierarchy: "Need a hierarchy in your custom fields for work packages?"
     text_add_new_custom_field: >
       To add new custom fields to a project you first need to create them before you can add them to this project.
     is_enabled_globally: "Is enabled globally"
@@ -544,10 +536,6 @@ kk:
         All occurrences of the placeholder user (e.g., as assignee, responsible or other user values) will be reassigned to an account called "Deleted user". As the data of every deleted account is reassigned to this account it will not be possible to distinguish the data the user created from the data of another deleted account.
       irreversible: "This action is irreversible"
       confirmation: "Enter the placeholder user name %{name} to confirm the deletion."
-    upsale:
-      title: Placeholder users
-      description: >
-        Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
   prioritiies:
     edit:
       priority_color_text: |
@@ -604,8 +592,6 @@ kk:
     edit:
       form_configuration:
         tab: "Form configuration"
-      more_info_text_html: >
-        Enterprise edition allows you to customize form configuration with these additional add-ons: <br> <ul class="%{list_styling_class}"> <li><b>Add new attribute groups</b></li> <li><b>Rename attribute groups</b></li> <li><b>Add a table of related work packages</b></li> </ul>
       projects:
         tab: "Projects"
         enabled_projects: "Enabled projects"
@@ -1049,6 +1035,7 @@ kk:
         consented_at: "Consented at"
       user_preference:
         comments_sorting: "Display comments"
+        dismissed_enterprise_banners: "Hidden enterprise banners"
         impaired: "Accessibility mode"
         auto_hide_popups: "Auto-hide success notifications"
         warn_on_leaving_unsaved: "Warn me when leaving a work package with unsaved changes"
@@ -1968,17 +1955,78 @@ kk:
   #Text direction: Left-to-Right (ltr) or Right-to-Left (rtl)
   direction: ltr
   ee:
+    features:
+      baseline_comparison: Baseline Comparisons
+      board_view: Advanced Boards
+      conditional_highlighting: Conditional Highlighting
+      comments_with_restricted_visibility: Comments With Restricted Visibility
+      custom_actions: Custom Actions
+      custom_field_hierarchies: Custom fields of type hierarchy
+      customize_life_cycle: Customize Life Cycle
+      date_alerts: Date Alerts
+      define_custom_style: Custom theme and logo
+      edit_attribute_groups: Edit Attribute Groups
+      gantt_pdf_export: Gantt PDF Export
+      grid_widget_wp_graph: Grid Widget Work Package Graph
+      ldap_groups: LDAP users and group sync
+      one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
+      placeholder_users: Placeholder Users
+      project_list_sharing: Project List Sharing
+      readonly_work_packages: Readonly Work Packages
+      sso_auth_providers: Single sign-on
+      team_planner_view: Team Planner View
+      two_factor_authentication: 2FA Authentication
+      virus_scanning: Antivirus Scanning
+      work_package_query_relation_columns: Work Package Query Relation Columns
+      work_package_sharing: Share work packages with external users
+      work_package_subject_generation: Work Package Subject Generation
     upsale:
       title: "Enterprise add-on"
+      plan_title: "Enterprise %{plan} add-on"
+      plan_name: "%{plan} enterprise plan"
+      plan_text_html: "Available only through the %{plan_name}."
       link_title: "More information"
-      automatic_subject_generation:
+      hide_banner: "Hide this banner"
+      baseline_comparison:
+        description: Highlight changes made to this list since any point in the past.
+      work_package_subject_generation:
         description: "Create automatically generated subjects using referenced attributes and text."
       customize_life_cycle:
         description: "Create and organize different project phases than the ones provided by PM2 project cycle planning."
-      form_configuration:
-        description: "Customize the form configuration with these additional add-ons:"
-        add_groups: "Add new attribute groups"
-        rename_groups: "Rename attributes groups"
+      conditional_highlighting:
+        description: "Need certain work packages to stand out from the mass? Use conditional highlighting in the work packages table."
+      work_package_query_relation_columns:
+        description: "Need to see relations or child elements in the work package list?"
+      edit_attribute_groups:
+        description: "Customize form configuration with these additional add-ons:"
+        features:
+          groups: "Add new attribute groups"
+          rename: "Rename attribute groups"
+          related: "Add a table of related work packages"
+      readonly_work_packages:
+        description: "Mark work packages as read-only for specific statuses."
+      custom_field_hierarchies:
+        description: "Hierarchy custom fields allow organizing hierarchical structures in work packages by making use of multi-level select lists."
+      date_alerts:
+        description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
+      work_package_sharing:
+        description: "Share work packages with users who are not members of the project."
+      define_custom_style:
+        title: "Custom color theme and logo"
+        more_info: "Note: the used logo will be publicly accessible."
+        description: Customize your OpenProject installation with your own logo and colors.
+      custom_actions:
+        title: "Custom actions"
+        description: "Custom actions are one-click shortcuts to a set of pre-defined actions that you can make available on certain work packages based on status, role, type or project."
+      virus_scanning:
+        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
+      placeholder_users:
+        title: Placeholder users
+        description: >
+          Placeholder users are a way to assign work packages to users who are not part of your project. They can be useful in a range of scenarios; for example, if you need to track tasks for a resource that is not yet named or available, or if you don’t want to give that person access to OpenProject but still want to track tasks assigned to them.
+      comments_with_restricted_visibility:
+        title: "For your eyes only"
+        description: "Restricted-visibilty comments allow an internal team to communicate amongst themselves privately. These are only visible to certain project roles and will never be visible publicly. Available only through the enterprise professional plan."
   enumeration_activities: "Time tracking activities"
   enumeration_work_package_priorities: "Work package priorities"
   enumeration_reported_project_statuses: "Reported project status"
@@ -3243,6 +3291,7 @@ kk:
   notice_successful_delete: "Successful deletion."
   notice_successful_cancel: "Successful cancellation."
   notice_successful_update: "Successful update."
+  notice_unsuccessful_update: "Update failed."
   notice_successful_update_custom_fields_added_to_project: |
     Successful update. The custom fields of the activated types are automatically activated
     on the work package form. <a href="%{url}" target="_blank">See more</a>.
@@ -3737,8 +3786,6 @@ kk:
         Remaining files have been scanned. There are %{file_count} in quarantine. You are being redirected to the quarantine page. Use this page to delete or override quarantined files.
       remaining_rescanned_files: >
         Virus scanning has been enabled successfully. There are %{file_count} that were uploaded previously and still need to be scanned. This process has been scheduled in the background. The files will remain accessible during the scan.
-      upsale:
-        description: "Ensure uploaded files in OpenProject are scanned for viruses before being accessible by other users."
       actions:
         delete: "Delete the file"
         quarantine: "Quarantine the file"
@@ -3824,6 +3871,9 @@ kk:
       section_holidays_and_closures: "Holidays and closures"
     work_packages:
       not_allowed_text: "You do not have the necessary permissions to view this page."
+      activities:
+        enable_comments_with_restricted_visibility: "Enable restricted visibility comments"
+        helper_text: "Restricted comments allow an internal team to communicate amongst themselves privately. These are only visible to select roles that have the necessary permissions and will not be visible publicly. %{link}"
   text_formatting:
     markdown: "Markdown"
     plain: "Plain text"
@@ -3859,8 +3909,6 @@ kk:
     When using custom fields: Keep in mind that custom fields need to be activated per project, too.
   text_custom_field_hint_activate_per_project_and_type: >
     Custom fields need to be activated per work package type and per project.
-  text_wp_status_read_only_html: >
-    The Enterprise edition will add these additional add-ons for work packages' statuses fields: <br> <ul> <li><b>Allow to mark work packages to read-only for specific statuses</b></li> </ul>
   text_project_custom_field_html: >
     The Enterprise edition will add these additional add-ons for projects' custom fields: <br> <ul> <li><b>Add custom fields for projects to your Project list to create a project portfolio view</b></li> </ul>
   text_custom_logo_instructions: >
@@ -4405,27 +4453,3 @@ kk:
     description: "Adds the OmniAuth SAML provider to OpenProject"
   enterprise_plans:
     legacy_enterprise: "Enterprise Plan"
-  enterprise_features:
-    baseline_comparison: Baseline Comparison
-    board_view: Board View
-    conditional_highlighting: Conditional Highlighting
-    custom_actions: Custom Actions
-    custom_field_hierarchies: Custom Field Hierarchies
-    customize_life_cycle: Customize Life Cycle
-    date_alerts: Date Alerts
-    define_custom_style: Define Custom Style
-    edit_attribute_groups: Edit Attribute Groups
-    gantt_pdf_export: Gantt PDF Export
-    grid_widget_wp_graph: Grid Widget Work Package Graph
-    ldap_groups: LDAP Groups
-    one_drive_sharepoint_file_storage: OneDrive/SharePoint File Storage
-    placeholder_users: Placeholder Users
-    project_list_sharing: Project List Sharing
-    readonly_work_packages: Readonly Work Packages
-    sso_auth_providers: SSO Auth Providers
-    team_planner_view: Team Planner View
-    two_factor_authentication: Two-Factor Authentication
-    virus_scanning: Attachment Virus Scanning
-    work_package_query_relation_columns: Work Package Query Relation Columns
-    work_package_sharing: Work Package Sharing
-    work_package_subject_generation: Work Package Subject Generation

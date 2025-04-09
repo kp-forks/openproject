@@ -630,9 +630,6 @@ tr:
         property_is: "%{difference_in_days} içinde."
         property_was: "%{difference_in_days} önce idi."
         property_is_deleted: "silindi."
-        upsale:
-          title: "Tarih uyarısı"
-          description: "Tarih uyarıları ile yaklaşan başlangıç veya bitiş tarihleri hakkında bilgilendirileceksiniz, böylece önemli bir teslim tarihini asla kaçırmaz veya unutmazsınız."
       center:
         label_actor_and: "ve"
         and_more_users:
@@ -695,7 +692,6 @@ tr:
           date_alerts:
             title: "Tarih uyarısı"
             description: "Dahil olduğunuz açık iş paketleri için önemli tarihler yaklaştığında otomatik bildirimler (atanan, sorumlu veya izleyici)."
-            teaser_text: "Tarih uyarıları ile yaklaşan başlangıç veya bitiş tarihleri hakkında bilgilendirileceksiniz, böylece önemli bir teslim tarihini asla kaçırmaz veya unutmazsınız."
           overdue: Süresi geçtiğinde
         project_specific:
           title: "Projeye özel bildirim ayarları"
@@ -1046,8 +1042,6 @@ tr:
       sharing:
         title: "İş paketini paylaş"
         show_all_users: "İş paketinin paylaşıldığı tüm kullanıcıları gösterin"
-        upsale:
-          description: "İş paketlerini proje üyesi olmayan kullanıcılarla paylaşın."
       table:
         configure_button: "İş paketi tablosunu kopyala"
         summary: "İş paketi satır tabloları ve iş paketi nitelik sütunları."
@@ -1082,10 +1076,6 @@ tr:
           manually: "Elle"
           warning: "Otomatik sıralama modunu etkinleştirirken önceki sıralamanızı kaybedeceksiniz."
         columns_help_text: "Tablo görünümünüze sütun eklemek için yukarıdaki giriş alanını kullanın. Sütunları yeniden sıralamak için sürükleyip bırakabilirsiniz."
-        upsale:
-          attribute_highlighting: "Kitleden sıyrılmak için bazı iş paketlerine mi ihtiyacınız var?"
-          relation_columns: "İş paketleri listesindeki ilişkileri görmek ister misiniz?"
-          check_out_link: "Enterprise sürümünü inceleyin."
         relation_filters:
           filter_work_packages_by_relation_type: "İş paketlerini ilişki türüne göre filtreleme"
       tabs:
@@ -1299,9 +1289,7 @@ tr:
       clear: "Temizle"
       apply: "Uygula"
       header_description: "Geçmişte herhangi bir noktadan bu yana bu listede yapılan değişiklikleri vurgulayın."
-      enterprise_header_description: "Enterprise sürümü ile geçmişte herhangi bir zamandan bu yana bu listede yapılan değişiklikleri vurgulayın."
       show_changes_since: "Şu zamandan sonraki değişiklikleri göster"
-      baseline_comparison: "Temel Karşılaştırma"
       help_description: "Karşılaştırma için referans zaman dilimi."
       time_description: "Yerel saatinizle: %{datetime}"
       time: "Saat"

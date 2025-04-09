@@ -630,9 +630,6 @@ sl:
         property_is: "is in %{difference_in_days}."
         property_was: "was %{difference_in_days} ago."
         property_is_deleted: "is deleted."
-        upsale:
-          title: "Date alerts"
-          description: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
       center:
         label_actor_and: "in"
         and_more_users:
@@ -697,7 +694,6 @@ sl:
           date_alerts:
             title: "Date alerts"
             description: "Automatic notifications when important dates are approaching for open work packages you are involved in (assignee, accountable or watcher)."
-            teaser_text: "With date alerts, you will be notified of upcoming start or finish dates so that you never miss or forget an important deadline."
           overdue: When overdue
         project_specific:
           title: "Project-specific notification settings"
@@ -1048,8 +1044,6 @@ sl:
       sharing:
         title: "Share work package"
         show_all_users: "Show all users with whom the work package has been shared with"
-        upsale:
-          description: "Share work packages with users who are not members of the project."
       table:
         configure_button: "Uredi tabelo delovnega paketa"
         summary: "Tabela z vrsticami delovnega paketa in stolpci atributov delovnega paketa.\n"
@@ -1084,10 +1078,6 @@ sl:
           manually: "Ročno"
           warning: "Ko aktivirate način samodejnega razvrščanja, boste izgubili prejšnje razvrščanje."
         columns_help_text: "Uporabi vnosno polje zgoraj za dodajanje stolpcev v pogled tabele. Stolpce lahko potegneš in spustiš za zamenjavo njihovega vrstnega reda."
-        upsale:
-          attribute_highlighting: "Potrebujete določene delovne pakete da izstopajo iz nereda?"
-          relation_columns: "Potrebujete videti povezave v seznamu delovnega paketa?"
-          check_out_link: "Check out the Enterprise edition."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtreraj delovne pakete po vrsti relacije"
       tabs:
@@ -1307,9 +1297,7 @@ sl:
       clear: "Počisti"
       apply: "Potrdi"
       header_description: "Highlight changes made to this list since any point in the past."
-      enterprise_header_description: "Highlight changes made to this list since any point in the past with Enterprise edition."
       show_changes_since: "Show changes since"
-      baseline_comparison: "Baseline comparison"
       help_description: "Reference time zone for the baseline."
       time_description: "In your local time: %{datetime}"
       time: "Čas"

@@ -1,4 +1,9 @@
 zh-CN:
+  ee:
+    upsale:
+      ldap_groups:
+        title: 'LDAP group synchronization'
+        description: 'Synchronize LDAP groups with OpenProject groups to manage users, change their permissions and facilitate user management across groups.'
   plugin_openproject_ldap_groups:
     name: "OpenProject LDAP 组"
     description: "LDAP 组成员同步。"

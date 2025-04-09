@@ -1,14 +1,15 @@
 #English strings go here
 cs:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'Vytvořit tabuli'
       label_unnamed_board: 'Nepojmenovaná tabule'
       label_unnamed_list: 'Nepojmenovaný seznam'
       label_board_type: 'Typ tabule'
-      upsale:
-        teaser_text: 'Chcete automatizovat své workflows s Tabulemi? Pokročilé Tabule jsou doplňkem Enterprise. Proveďte upgrade na placený plán.'
-        upgrade: 'Upgradovat nyní'
       lists:
         delete: 'Odstranit seznam'
       version:

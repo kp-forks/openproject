@@ -1,12 +1,13 @@
 zh-TW:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: '新增小工具'
       remove: '移除小工具'
       configure: '設定小工具'
-      upsale:
-        text: "某些組件，如工作包圖組件，只在企業版提供。"
-        link: '企業版。'
       widgets:
         missing_permission: "您沒有必要的權限來檢視小工具。"
         custom_text:

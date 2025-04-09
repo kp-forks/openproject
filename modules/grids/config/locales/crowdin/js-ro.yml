@@ -1,12 +1,13 @@
 ro:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Adaugă widget'
       remove: 'Eliminați widget-ul'
       configure: 'Configurați widget-ul'
-      upsale:
-        text: "Unele widget-uri, cum ar fi widget-ul grafic pachet de lucru, sunt disponibile doar în Enterprise Edition."
-        link: 'Ediția Enterprise.'
       widgets:
         missing_permission: "Nu ai drepturile necesare pentru a vizualiza acest widget."
         custom_text:

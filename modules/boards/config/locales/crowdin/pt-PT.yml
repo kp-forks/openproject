@@ -6,6 +6,10 @@ pt-PT:
   permission_show_board_views: "Ver quadros"
   permission_manage_board_views: "Gerir quadros"
   project_module_board_view: "Quadros"
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   boards:
     label_board: "Quadro"
     label_boards: "Quadros"
@@ -34,6 +38,3 @@ pt-PT:
         Quadro com colunas automatizadas para subprojetos. Arrastar pacotes de trabalho para outras listas atualiza o (sub)projeto de acordo.
       subtasks: >
         Quadro com colunas automatizadas para sub-elementos. Arrastar pacotes de trabalho para outras listas atualiza o elemento principal de acordo.
-    upsale:
-      teaser_text: 'Gostaria de automatizar os seus fluxos de trabalho com Quadros? Os quadros avançados são um complemento Enterprise. Faça upgrade para um plano pago.'
-      upgrade: 'Fazer o upgrade agora'

@@ -631,9 +631,6 @@ it:
         property_is: "tra %{difference_in_days}."
         property_was: "era %{difference_in_days} fa."
         property_is_deleted: "eliminato."
-        upsale:
-          title: "Avvisi data"
-          description: "Con gli avvisi sulle date, sarai avvisato delle prossime date di inizio o di fine in modo da non perdere mai o dimenticare una scadenza importante."
       center:
         label_actor_and: "e"
         and_more_users:
@@ -696,7 +693,6 @@ it:
           date_alerts:
             title: "Avvisi data"
             description: "Notifiche automatiche quando si avvicinano date importanti per le macro-attività aperte in cui sei coinvolto (assegnatario, responsabile od osservatore)"
-            teaser_text: "Con gli avvisi sulle date, sarai avvisato delle prossime date di inizio o di fine in modo da non perdere mai o dimenticare una scadenza importante."
           overdue: Alla scadenza
         project_specific:
           title: "Impostazioni di notifica specifiche del progetto"
@@ -1047,8 +1043,6 @@ it:
       sharing:
         title: "Condividi macro-attività"
         show_all_users: "Mostra tutti gli utenti con i quali la macro-attività è stata condivisa"
-        upsale:
-          description: "Condividi macro-attività con utenti che non sono membri del progetto."
       table:
         configure_button: "Configura la tabella della macro-attività"
         summary: "Tabella con righe di macro-attività e colonne dei loro attributi."
@@ -1083,10 +1077,6 @@ it:
           manually: "Manuale"
           warning: "Perderai il tuo ordinamento precedente quando attivi la modalità di ordinamento automatico."
         columns_help_text: "Utilizza il campo di input sopra per aggiungere colonne alla visualizzazione della tabella. È possibile trascinare e rilasciare le colonne per riordinarle."
-        upsale:
-          attribute_highlighting: "Vuoi che alcune macro-attività si distinguano dalla massa?"
-          relation_columns: "Vuoi visualizzare le relazioni nell'elenco di macro-attività?"
-          check_out_link: "Scopri l'edizione Enterprise."
         relation_filters:
           filter_work_packages_by_relation_type: "Filtra le macro-attività per tipo di relazione"
       tabs:
@@ -1300,9 +1290,7 @@ it:
       clear: "Pulisci"
       apply: "Applica"
       header_description: "Evidenzia le modifiche apportate a questo elenco da qualsiasi punto nel passato."
-      enterprise_header_description: "Evidenzia le modifiche apportate a questo elenco da qualsiasi punto nel passato con l'edizione Imprese."
       show_changes_since: "Mostra le modifiche da"
-      baseline_comparison: "Confronto della base di riferimento"
       help_description: "Fuso orario di riferimento per la base di riferimento."
       time_description: "Nella tua ora locale: %{datetime}"
       time: "Tempo"

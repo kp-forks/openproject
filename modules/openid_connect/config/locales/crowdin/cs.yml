@@ -92,6 +92,7 @@ cs:
       custom:
         name: Vlastní
       upsale:
+        title: "Single Sign-On (SSO) with OpenID connect"
         description: Připojit OpenProject k poskytovateli OpenID připojení identity
       label_add_new: Přidat nového poskytovatele OpenID
       label_edit: Upravit poskytovatele OpenID %{name}

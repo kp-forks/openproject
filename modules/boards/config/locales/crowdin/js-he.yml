@@ -1,14 +1,15 @@
 #English strings go here
 he:
+  ee:
+    upsale:
+      board_view:
+        description: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
   js:
     boards:
       create_new: 'ליצור לוח חדש'
       label_unnamed_board: 'Unnamed board'
       label_unnamed_list: 'Unnamed list'
       label_board_type: 'סוג לוח'
-      upsale:
-        teaser_text: 'Would you like to automate your workflows with Boards? Advanced boards are an Enterprise add-on. Please upgrade to a paid plan.'
-        upgrade: 'שדרג עכשיו'
       lists:
         delete: 'מחיקת רשימה'
       version:

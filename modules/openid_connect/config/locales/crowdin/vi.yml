@@ -92,6 +92,7 @@ vi:
       custom:
         name: Custom
       upsale:
+        title: "Single Sign-On (SSO) with OpenID connect"
         description: Connect OpenProject to an OpenID connect identity provider
       label_add_new: Thêm nhà cung cấp OpenID mới
       label_edit: Chỉnh sửa nhà cung cấp OpenID %{name}

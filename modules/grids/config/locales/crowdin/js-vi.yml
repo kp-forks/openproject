@@ -1,12 +1,13 @@
 vi:
+  ee:
+    upsale:
+      grid_widget_wp_graph:
+        description: "Some widgets, like the work package graph widget, are only available in the Enterprise edition."
   js:
     grid:
       add_widget: 'Thêm widget'
       remove: 'Xóa widget'
       configure: 'Cấu hình widget'
-      upsale:
-        text: "Một số tiện ích, như tiện ích biểu đồ gói công việc, chỉ khả dụng trong phiên bản Enterprise."
-        link: 'Phiên bản doanh nghiệp.'
       widgets:
         missing_permission: "Bạn không có quyền cần thiết để xem widget này."
         custom_text:
