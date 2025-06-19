@@ -320,25 +320,29 @@ Rails.application.reloader.to_prepare do
                      {},
                      permissible_on: %i[project],
                      require: :loggedin,
-                     dependencies: :view_work_packages
+                     dependencies: :view_work_packages,
+                     contract_actions: { internal_comments: %i[read] }
 
       wpt.permission :add_internal_comments,
                      {},
                      permissible_on: %i[project],
                      require: :loggedin,
-                     dependencies: %i[view_project view_internal_comments]
+                     dependencies: %i[view_project view_internal_comments],
+                     contract_actions: { internal_comments: %i[create] }
 
       wpt.permission :edit_own_internal_comments,
                      {},
                      permissible_on: %i[project],
                      require: :loggedin,
-                     dependencies: %i[view_project view_internal_comments]
+                     dependencies: %i[view_project view_internal_comments],
+                     contract_actions: { internal_comments: %i[update_own] }
 
       wpt.permission :edit_others_internal_comments,
                      {},
                      permissible_on: %i[project],
                      require: :loggedin,
-                     dependencies: %i[view_project view_internal_comments]
+                     dependencies: %i[view_project view_internal_comments],
+                     contract_actions: { internal_comments: %i[update_others] }
 
       # WP attachments can be added with :edit_work_packages, this permission allows it without Edit WP as well.
       wpt.permission :add_work_package_attachments,
