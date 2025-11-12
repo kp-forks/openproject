@@ -71,7 +71,7 @@ RSpec.describe "BlockNote editor rendering", :js, with_flag: { block_note_editor
     expect(page).to have_content("Überschrift")
   end
 
-  it "renders the blocknote editor in english if the users locale is not available for BlockNote" do
+  it "renders the BlockNote editor in english if the users locale is not available for BlockNote" do
     admin.update!(language: "af")
     visit edit_document_path(document)
 
@@ -80,5 +80,13 @@ RSpec.describe "BlockNote editor rendering", :js, with_flag: { block_note_editor
 
     editor.open_command_dialog
     expect(page).to have_content("Heading")
+  end
+
+  it "renders the BlockNote editor with custom menu entries for work package linking" do
+    visit edit_document_path(document)
+
+    expect(page).to have_test_selector("blocknote-document-description")
+    editor.send_keys("/openproject")
+    expect(page).to have_content("Search and link an existing Work Package")
   end
 end

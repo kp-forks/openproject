@@ -165,6 +165,7 @@ vi:
           group_does_not_exist: "%{group} không tồn tại. Kiểm tra cấu hình phiên bản Nextcloud của bạn."
           insufficient_privileges: OpenProject không có đủ quyền để thêm %{user} vào %{group}. Kiểm tra cài đặt nhóm của bạn trong Nextcloud.
           not_allowed: Nextcloud chặn yêu cầu.
+          not_found: OpenProject could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
           unauthorized: OpenProject không thể đồng bộ với Nextcloud. Hãy kiểm tra cấu hình lưu trữ và Nextcloud.
           user_does_not_exist: "%{user} không tồn tại trong Nextcloud."
         one_drive_sync_service:

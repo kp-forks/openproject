@@ -165,6 +165,7 @@ ms:
           group_does_not_exist: "%{group} tidak wujud. Semak konfigurasi contoh Nextcloud anda."
           insufficient_privileges: OpenProject tidak mempunyai keistimewaan yang mencukupi untuk menambah %{user} kepada %{group}. Semak tetapan kumpulan anda dalam Nextcloud.
           not_allowed: Nextcloud menyekat permintaan itu.
+          not_found: OpenProject could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
           unauthorized: OpenProject tidak dapat disegerakkan dengan Nextcloud. Sila semak storan dan konfigurasi Nextcloud anda.
           user_does_not_exist: "%{user} tidak wujud dalam Nextcloud."
         one_drive_sync_service:

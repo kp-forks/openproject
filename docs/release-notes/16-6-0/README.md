@@ -32,9 +32,9 @@ OpenProject 16.6 introduces new project attribute types that make portfolio eval
 
 **Calculated values** enable automatic computations based on formulas using numeric project attributes, including scores from Weighted item lists or even other calculated values. The computed result is displayed directly on the project overview and in the project list. It automatically updates whenever one of its source attributes (e.g., *Benefit* or *Effort* in the example below) is changed. This allows teams to calculate project scores and prioritise consistently across the portfolio.
 
-Here's an example of a calculated value called 'Overall score (calculated)' with the following formula: (Strategic impact * 0.6) + ( Benefit​* 0.3) - (Effort * 0.1)
+Here's an example of a calculated value called 'Overall score (calculated)' with the following formula: `(Strategic impact * 0.6) + (Benefit ​* 0.3) - (Effort * 0.1)`
 
-![Formula example for a project attribute of type 'Calculated Project Score': (Strategic impact * 0.6) + ( Benefit ​* 0.3) - (Effort * 0.1)](openproject-16-6-project-attributes-calculated-value.png)
+![Formula example for a project attribute of type 'Calculated Project Score': (Strategic impact * 0.6) + (Benefit ​* 0.3) - (Effort * 0.1)](openproject-16-6-project-attributes-calculated-value.png)
 
 Together, these additions give project portfolio managers a flexible foundation for data-driven project evaluation and more transparent portfolio decisions. Of course, all project attributes, including calculated values, can be used for many other purposes.
 

@@ -165,6 +165,7 @@ zh-CN:
           group_does_not_exist: "%{group} 不存在。检查您的 Nextcloud 实例配置。"
           insufficient_privileges: OpenProject 没有足够的权限将 %{user} 添加到 %{group}。请检查 Nextcloud 中的组设置。
           not_allowed: Nextcloud 阻止了该请求。
+          not_found: OpenProject could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
           unauthorized: OpenProject 无法与 Nextcloud 同步。请检查您的存储设备和 Nextcloud 配置。
           user_does_not_exist: "在 Nextcloud 中不存在 %{user}  。"
         one_drive_sync_service:

@@ -165,6 +165,7 @@ pt-BR:
           group_does_not_exist: "%{group} não existe. Verifique a configuração da sua instância do Nextcloud."
           insufficient_privileges: O OpenProject não tem privilégios suficientes para adicionar %{user} a %{group}. Verifique as configurações do seu grupo no Nextcloud.
           not_allowed: O Nextcloud bloqueia a solicitação.
+          not_found: OpenProject could not find the file on the Nextcloud Storage Provider. Please check if it wasn't deleted.
           unauthorized: O OpenProject não pôde sincronizar com o Nextcloud. Verifique as configurações de armazenamento e do Nextcloud.
           user_does_not_exist: "%{user} não existe no Nextcloud."
         one_drive_sync_service:
